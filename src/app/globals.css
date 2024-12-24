@@ -14,9 +14,13 @@
   }
 }
 
+*{
+  background-color: var(--background) !important;
+}
+
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--foreground) !important;
+  background: var(--background) !important;
   font-family: var(--font-quicksand), Arial, Helvetica, sans-serif;
 }
 
