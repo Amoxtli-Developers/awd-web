@@ -14,9 +14,6 @@
   }
 }
 
-*{
-  background-color: var(--background) !important;
-}
 
 body {
   color: var(--foreground) !important;
