@@ -1,42 +1,38 @@
 import { AnimatedTestimonials } from "@components/animated-testimonials";
-import test1 from "@assets/team/member1.jpg"
+import avatar1 from "@assets/testimonials/avatar1_Mesa de trabajo 1.jpg";
+import avatar2 from "@assets/testimonials/avatar2_Mesa de trabajo 1.jpg";
+import avatar3 from "@assets/testimonials/avatar3_Mesa de trabajo 1.jpg";
+import avatar4 from "@assets/testimonials/avatar4_Mesa de trabajo 1.jpg";
 
 export function AnimatedTestimonialsDemo() {
   const testimonials = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: test1.src,
+        "Our business website is now faster, more responsive, and beautifully designed. The team perfectly captured our vision and delivered a seamless user experience.",
+      name: "Andrés I.",
+      designation: "CEO at Orza Tech",
+      src: avatar1.src,
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: test1.src,
+        "The e-commerce platform built for us has taken our sales to the next level. The intuitive design and performance improvements exceeded all expectations.",
+      name: "Laura O.",
+      designation: "Owner at Fratelli's Helados",
+      src: avatar2.src,
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: test1.src,
+        "The portfolio site created for us is stunning and functional. It perfectly showcases our work and has helped us gain more clients. Truly outstanding work!",
+      name: "Omar D.",
+      designation: "Creative Director at Rondo Productions",
+      src: avatar3.src,
     },
     {
       quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: test1.src,
-    },
-    {
-      quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: test1.src,
+        "Our educational site is now a hub for interactive learning and easy access for parents. The team's attention to detail and creativity made all the difference.",
+      name: "Patricia A.",
+      designation: "Principal at Colegio Antonio José de Sucre",
+      src: avatar4.src,
     },
   ];
   return <AnimatedTestimonials testimonials={testimonials} />;

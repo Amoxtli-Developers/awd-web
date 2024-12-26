@@ -81,7 +81,7 @@ const Hero = () => {
             sx={{
               fontWeight: 400,
               lineHeight: 1.2,
-              fontSize: { xs: "64px", sm: "72px", md: "80px", lg: "96px" },
+              fontSize: { xs: "56px", sm: "72px", md: "80px", lg: "96px" },
             }}
           >
             We are <strong>Amoxtli</strong> <br />
@@ -94,7 +94,7 @@ const Hero = () => {
           <Typography
             variant="subtitle1"
             sx={{
-              fontSize: { xs: "16px", sm: "20px", md: "24px", lg: "1.5rem" },
+              fontSize: { xs: "14px", sm: "20px", md: "24px", lg: "1.5rem" },
               fontWeight: 400,
               mt: 2,
             }}
@@ -110,7 +110,7 @@ const Hero = () => {
             sx={{
               mt: 3,
               lineHeight: 1.8,
-              fontSize: { xs: "24px", sm: "28px", md: "32px", lg: "40px" },
+              fontSize: { xs: "18px", sm: "28px", md: "32px", lg: "40px" },
             }}
           >
             A software development startup founded in{" "}
