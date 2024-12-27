@@ -3,7 +3,8 @@
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import heroImage from "@assets/hero/hero.jpg";
+import { useEffect, useState } from "react";
+import { supabase } from "@utils/supabaseClient";
 
 const textVariants = {
   hidden: { opacity: 0, x: 50 },
@@ -21,6 +22,25 @@ const textVariants = {
 };
 
 const Hero = () => {
+  const [heroImageUrl, setHeroImageUrl] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchHeroImage = async () => {
+      const { data } = await supabase.storage
+        .from("AWD images") // Reemplaza con el nombre de tu bucket
+        .getPublicUrl("hero/hero.jpg"); // Ruta dentro del bucket
+
+      if (!data) {
+        console.error("Error fetching hero image");
+        return;
+      }
+
+      setHeroImageUrl(data.publicUrl);
+    };
+
+    fetchHeroImage();
+  }, []);
+
   return (
     <Box
       sx={{
@@ -29,27 +49,29 @@ const Hero = () => {
         position: "relative",
         overflow: "hidden",
         display: "flex",
-        justifyContent: { xs: "center", md: "flex-end" }, // Center text on mobile
+        justifyContent: { xs: "center", md: "flex-end" },
         alignItems: "center",
       }}
     >
       {/* Background Image */}
-      <Box
-        sx={{
-          position: "absolute",
-          inset: 0,
-          zIndex: -2,
-        }}
-      >
-        <Image
-          src={heroImage}
-          alt="Background"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center" // Ensures proper image positioning
-          priority
-        />
-      </Box>
+      {heroImageUrl && (
+        <Box
+          sx={{
+            position: "absolute",
+            inset: 0,
+            zIndex: -2,
+          }}
+        >
+          <Image
+            src={heroImageUrl}
+            alt="Background"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"
+            priority
+          />
+        </Box>
+      )}
 
       {/* Overlay with Blur Effect */}
       <Box
@@ -68,7 +90,7 @@ const Hero = () => {
         initial="hidden"
         animate="visible"
         sx={{
-          textAlign: { xs: "right", md: "right" }, // Center text on mobile
+          textAlign: { xs: "right", md: "right" },
           color: "white",
           px: { xs: 2, sm: 4, md: 6 },
           maxWidth: { xs: "90%", md: "1000px" },
