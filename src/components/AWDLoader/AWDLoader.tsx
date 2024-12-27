@@ -11,7 +11,7 @@ const AWDLoader: React.FC = () => {
 
   useEffect(() => {
     if (textRef.current) {
-      const text = "Amoxtli Web Developers";
+      const text = "< Amoxtli Web Developers />";
       const typewriter = gsap.timeline();
 
       text.split("").forEach((char, i) => {
