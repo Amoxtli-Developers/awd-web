@@ -110,6 +110,8 @@ const PricingCard: React.FC<PricingCardProps> = ({
         <Button
           variant="text"
           href={href}
+          target="_blank"
+          rel="noopener noreferrer"
           sx={{
             backgroundColor: "transparent",
             color: textColor,

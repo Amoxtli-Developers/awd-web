@@ -145,7 +145,7 @@ const ProjectsView = () => {
                 our expert team.
               </Typography>
               <AWDButton
-                link="https://calendar.app.google/gkswoPWVy58kRTY67"
+                link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1cdpJh66qBBGSsHQROwXAyx8-wogW4ICntw-FUVtXZnz9yYvrJCrrcGds46hdzJFa4Vo13qVeA"
                 borderColor="#FA206F"
                 fontColor="#FA206F"
                 backgroundColor="transparent"

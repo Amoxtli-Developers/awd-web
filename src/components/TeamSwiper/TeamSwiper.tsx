@@ -8,46 +8,48 @@ import { Card, CardContent, Typography } from "@mui/material";
 import Image from "next/image";
 
 // Import images
-import member1 from "@assets/team/member1.jpg";
-import member2 from "@assets/team/member1.jpg";
-import member3 from "@assets/team/member1.jpg";
-import member4 from "@assets/team/member1.jpg";
+import salo from "@assets/team/salo.jpeg";
+import sofy from "@assets/team/sofy.jpeg";
+import arthur from "@assets/team/arthur.jpeg";
+import ro from "@assets/team/ro.jpeg";
+import isic from "@assets/team/isic.jpeg";
+import dani from "@assets/team/dani.jpeg";
 
 const teamData = [
   {
     name: "Salomon",
     position: "Ceo and Front-end lead",
-    image: member1,
+    image: salo,
     bgColor: "#FF0099",
   },
   {
     name: "Sofía",
     position: "Cto and Back-end lead",
-    image: member2,
+    image: sofy,
     bgColor: "#FF99C8",
   },
   {
     name: "Arturo",
     position: "Co-founder & Back-end dev",
-    image: member3,
+    image: arthur,
     bgColor: "#F8D1FF",
   },
   {
     name: "Daniel",
     position: "AI tech-lead",
-    image: member4,
+    image: dani,
     bgColor: "#101010",
   },
   {
     name: "Rodrigo",
     position: "Co-founder",
-    image: member1,
+    image: ro,
     bgColor: "#FF99C8",
   },
   {
     name: "Isaac",
     position: "Co-founder & Front-end dev",
-    image: member2,
+    image: isic,
     bgColor: "#F8D1FF",
   },
 ];
@@ -69,8 +71,8 @@ const TeamSwiper = () => {
         <SwiperSlide
           key={index}
           style={{
-            width: "350px",
-            height: "350px",
+            width: "300px",
+            height: "300px",
           }}
         >
           {/* Card Component */}

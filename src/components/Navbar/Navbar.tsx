@@ -89,7 +89,7 @@ const Navbar = () => {
 
         {/* Call to Action */}
         <AWDButton
-          link="https://calendar.app.google/gkswoPWVy58kRTY67"
+          link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1cdpJh66qBBGSsHQROwXAyx8-wogW4ICntw-FUVtXZnz9yYvrJCrrcGds46hdzJFa4Vo13qVeA"
           borderColor={isScrolled ? "#FA206F" : "white"}
           fontColor={isScrolled ? "#FA206F" : "white"}
           backgroundColor="transparent"

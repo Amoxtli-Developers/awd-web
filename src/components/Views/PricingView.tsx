@@ -40,7 +40,7 @@ const PricingView = () => {
       ],
       backgroundColor: "#FFFFFF",
       textColor: "#000000",
-      href: "#get-started-single",
+      href: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3-Z0m1jTqkrAMsmX92MdfF--07g4sEkRlNqkxPwbCsd5vRnbtWFSMMoKaHHsNO0MJTAgZ0Lr8m",
     },
     {
       title: "Landing Page",
@@ -57,7 +57,7 @@ const PricingView = () => {
       ],
       backgroundColor: "#FA206F",
       textColor: "#FFFFFF",
-      href: "#get-started-landing",
+      href: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ194tE2ge5Fp80T3yPfH489R2KU6hQTbvfNSceg477tPE0wFWk6kp6tdbb4K2B5-Pd7zJPYz0NB",
     },
     {
       title: "E-commerce",
@@ -74,7 +74,7 @@ const PricingView = () => {
       ],
       backgroundColor: "#FFFFFF",
       textColor: "#000000",
-      href: "#get-started-ecommerce",
+      href: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0Mdzy_Bpm60JI7B4PLy94RvT3iOX49-_FLtvIwBVGO2LyhytH9-0Bn_hyVcIBhCBuAp0aNhl9d",
     },
     {
       title: "Brand Design",
@@ -90,7 +90,7 @@ const PricingView = () => {
       ],
       backgroundColor: "#FFFFFF",
       textColor: "#000000",
-      href: "#get-started-brand",
+      href: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1cdpJh66qBBGSsHQROwXAyx8-wogW4ICntw-FUVtXZnz9yYvrJCrrcGds46hdzJFa4Vo13qVeA",
     },
   ];
 

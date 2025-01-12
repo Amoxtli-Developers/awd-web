@@ -1,8 +1,8 @@
 import { AnimatedTestimonials } from "@components/animated-testimonials";
-import avatar1 from "@assets/testimonials/avatar1_Mesa de trabajo 1.jpg";
-import avatar2 from "@assets/testimonials/avatar2_Mesa de trabajo 1.jpg";
-import avatar3 from "@assets/testimonials/avatar3_Mesa de trabajo 1.jpg";
-import avatar4 from "@assets/testimonials/avatar4_Mesa de trabajo 1.jpg";
+import avatar1 from "@assets/testimonials/orza.jpg";
+import avatar2 from "@assets/testimonials/fratellis.jpg";
+import avatar3 from "@assets/testimonials/rondo.jpg";
+import avatar4 from "@assets/testimonials/sucre.jpg";
 
 export function AnimatedTestimonialsDemo() {
   const testimonials = [
