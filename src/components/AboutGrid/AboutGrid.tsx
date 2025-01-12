@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Grid, Box, Typography } from "@mui/material";
 import Image, { StaticImageData } from "next/image";
+import { useTranslation } from "react-i18next"; // Importar useTranslation
 import grid1 from "@assets/about/grid_1.jpg";
 import grid2 from "@assets/about/grid_2.gif";
 import grid3 from "@assets/about/grid_3.jpg";
@@ -12,37 +13,38 @@ const aboutData = [
   {
     id: 1,
     frontImage: grid1,
-    backText:
-      "At Amoxtli, we are passionate developers creating innovative software solutions to simplify tasks and solve real-world challenges. Our mission is to transform ideas into impactful technology that improves lives and empowers businesses.",
+    backTextKey: "about.grid1", // Clave de traducción
+    gridSize: 8,
   },
   {
     id: 2,
     frontImage: grid2,
-    backText:
-      "At Amoxtli, the axolotl symbolizes resilience, adaptability, and innovation—values that drive our work. Beyond being our emblem, it represents our commitment to preserving Mexico’s heritage. We actively support axolotl sanctuaries through sponsorships and collaborations, helping protect this iconic species for future generations.",
+    backTextKey: "about.grid2", // Clave de traducción
+    gridSize: 4,
   },
   {
     id: 3,
     frontImage: grid3,
-    backText:
-      "At Amoxtli, we’ve delivered over 20 successful software projects across diverse industries, leveraging a wide range of technologies and programming languages. Our expertise enables us to craft innovative, tailor-made solutions that meet each client’s unique needs. Experience advanced custom software with Amoxtli, where innovation meets precision and quality.",
+    backTextKey: "about.grid3", // Clave de traducción
+    gridSize: 4,
   },
   {
     id: 4,
     frontImage: grid4,
-    backText:
-      "Amoxtli proudly participated in HackMx at Tecnológico de Monterrey, where we developed an innovative tool for Thales Enterprise. Using advanced AI models from Google and Happy Face, our solution analyzes and classifies 911 emergency calls to improve response efficiency and effectiveness. This project highlights our dedication to leveraging cutting-edge technology to address real-world challenges and support critical decision-making in emergency scenarios.",
+    backTextKey: "about.grid4", // Clave de traducción
+    gridSize: 8,
   },
 ];
 
 const FlipCard = ({
   frontImage,
-  backText,
+  backTextKey,
 }: {
   frontImage: StaticImageData;
-  backText: string;
+  backTextKey: string;
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
+  const { t } = useTranslation(); // Inicializar traducciones
 
   const handleCardClick = () => {
     setIsFlipped(!isFlipped);
@@ -64,7 +66,7 @@ const FlipCard = ({
         sx={{
           position: "relative",
           width: "100%",
-          height: "500px", // Adjust card height
+          height: "500px", // Ajusta la altura de las tarjetas
           transformStyle: "preserve-3d",
           transition: "transform 0.8s",
           transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)",
@@ -104,8 +106,14 @@ const FlipCard = ({
             padding: "3rem",
           }}
         >
-          <Typography variant="h6" textAlign="center" sx={{ fontSize: { xs: "1rem", sm: "1.5rem", md: "1.2rem" } }}>
-            {backText}
+          <Typography
+            variant="h6"
+            textAlign="center"
+            sx={{
+              fontSize: { xs: "1rem", sm: "1.5rem", md: "1.2rem" },
+            }}
+          >
+            {t(backTextKey)} {/* Traducción dinámica */}
           </Typography>
         </Box>
       </Box>
@@ -116,37 +124,19 @@ const FlipCard = ({
 const AboutGrid = () => {
   return (
     <Grid container spacing={3}>
-      {/* Grid Image 1 (Takes md=8) */}
-      <Grid item xs={12} md={8}>
-        <FlipCard
-          frontImage={aboutData[0].frontImage}
-          backText={aboutData[0].backText}
-        />
-      </Grid>
-
-      {/* Grid Image 2 (Takes md=4) */}
-      <Grid item xs={12} md={4}>
-        <FlipCard
-          frontImage={aboutData[1].frontImage}
-          backText={aboutData[1].backText}
-        />
-      </Grid>
-
-      {/* Grid Image 3 (Takes md=4) */}
-      <Grid item xs={12} md={4}>
-        <FlipCard
-          frontImage={aboutData[2].frontImage}
-          backText={aboutData[2].backText}
-        />
-      </Grid>
-
-      {/* Grid Image 4 (Takes md=8) */}
-      <Grid item xs={12} md={8}>
-        <FlipCard
-          frontImage={aboutData[3].frontImage}
-          backText={aboutData[3].backText}
-        />
-      </Grid>
+      {aboutData.map((data) => (
+        <Grid
+          item
+          xs={12}
+          md={data.gridSize}
+          key={data.id}
+        >
+          <FlipCard
+            frontImage={data.frontImage}
+            backTextKey={data.backTextKey} // Pasar clave de traducción
+          />
+        </Grid>
+      ))}
     </Grid>
   );
 };

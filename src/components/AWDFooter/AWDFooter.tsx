@@ -4,8 +4,11 @@ import React from "react";
 import { Box, Grid, Typography, Link } from "@mui/material";
 import logo from "@assets/logo/awd_logo_white.svg";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 const AWDFooter: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <Box
       sx={{
@@ -36,7 +39,7 @@ const AWDFooter: React.FC = () => {
           item
           xs={12}
           sm={4}
-          sx={{ textAlign: { xs: "center", sm: "left" } }}
+          sx={{ textAlign: { xs: "center", md: "left" }, justifyContent: {xs: "center", md: "left"}, display: "flex" }}
         >
           <Image src={logo} alt="AWD Logo" width={150} height={150} />
         </Grid>
@@ -62,7 +65,7 @@ const AWDFooter: React.FC = () => {
                 fontWeight: 600,
               }}
             >
-              Axo Store
+              {t("footer.links.axoStore")}
             </Link>
             <Link
               href="#"
@@ -76,7 +79,7 @@ const AWDFooter: React.FC = () => {
                 fontWeight: 600,
               }}
             >
-              Help the Axolotls
+              {t("footer.links.helpAxolotls")}
             </Link>
             <Link
               href="https://reptilarioyajolotarioquetzal.com/"
@@ -90,7 +93,7 @@ const AWDFooter: React.FC = () => {
                 fontWeight: 600,
               }}
             >
-              Visit AxoSanctuary
+              {t("footer.links.visitSanctuary")}
             </Link>
           </Typography>
         </Grid>
@@ -118,7 +121,7 @@ const AWDFooter: React.FC = () => {
                 fontWeight: 600,
               }}
             >
-              Instagram
+              {t("footer.social.instagram")}
             </Link>
             <Link
               href="https://www.facebook.com/profile.php?id=61551487858288"
@@ -132,7 +135,7 @@ const AWDFooter: React.FC = () => {
                 fontWeight: 600,
               }}
             >
-              Facebook
+              {t("footer.social.facebook")}
             </Link>
             <Link
               href="https://www.linkedin.com/company/amoxtli-web-developers"
@@ -146,7 +149,7 @@ const AWDFooter: React.FC = () => {
                 fontWeight: 600,
               }}
             >
-              LinkedIn
+              {t("footer.social.linkedin")}
             </Link>
           </Typography>
         </Grid>
@@ -163,7 +166,7 @@ const AWDFooter: React.FC = () => {
           fontSize: { xs: "20px", sm: "32px", md: "48px" },
         }}
       >
-        contact@amoxtli.tech
+        {t("footer.contact")}
       </Link>
     </Box>
   );

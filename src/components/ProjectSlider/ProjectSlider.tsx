@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import ProjectCard from "@components/ProjectCard/ProjectCard";
 import { supabase } from "@utils/supabaseClient";
+import { useTranslation } from "react-i18next";
 
 interface Project {
   id: string;
@@ -17,6 +18,7 @@ interface Project {
 }
 
 const ProjectSlider: React.FC = () => {
+  const { t } = useTranslation();
   const [projects, setProjects] = useState<Project[]>([]);
 
   useEffect(() => {
@@ -24,113 +26,113 @@ const ProjectSlider: React.FC = () => {
       const projectData = [
         {
           id: "12",
-          title: "Reptilario y Ajolotario Quetzal",
-          description: "Axolotl Refugee Site",
+          title: t("projects.reptilario.title"),
+          description: t("projects.reptilario.description"),
           imagePath: "projects/12.jpeg",
           href: "https://reptilarioyajolotarioquetzal.com/",
         },
         {
           id: "14",
-          title: "Greek",
-          description: "DJ Site",
+          title: t("projects.greek.title"),
+          description: t("projects.greek.description"),
           imagePath: "projects/14.jpeg",
           href: "https://djgreek.mx",
         },
         {
           id: "15",
-          title: "Neural Factory",
-          description: "Big Data Company Site",
+          title: t("projects.neuralFactory.title"),
+          description: t("projects.neuralFactory.description"),
           imagePath: "projects/15.jpeg",
           href: "https://neural-factory.com/",
         },
         {
           id: "13",
-          title: "Xianna",
-          description: "Fashion Blog",
+          title: t("projects.xianna.title"),
+          description: t("projects.xianna.description"),
           imagePath: "projects/13.jpeg",
           href: "https://xianna.com.mx/",
         },
         {
           id: "5",
-          title: "Orza Tech",
-          description: "Startup Site",
+          title: t("projects.orzaTech.title"),
+          description: t("projects.orzaTech.description"),
           imagePath: "projects/5.jpeg",
           href: "https://orzatech.com",
         },
         {
           id: "6",
-          title: "Psique & Ser",
-          description: "Business Site",
+          title: t("projects.psiqueSer.title"),
+          description: t("projects.psiqueSer.description"),
           imagePath: "projects/6.jpeg",
           href: "https://psiqueyser.org",
         },
         {
           id: "1",
-          title: "Contadores Martínez Carreño y Asociados",
-          description: "Single Page",
+          title: t("projects.cmc.title"),
+          description: t("projects.cmc.description"),
           imagePath: "projects/1.jpeg",
           href: "https://cmcya.mx",
         },
         {
           id: "2",
-          title: "Fratelli's Helados",
-          description: "Landing Page",
+          title: t("projects.fratellis.title"),
+          description: t("projects.fratellis.description"),
           imagePath: "projects/2.jpeg",
           href: "https://fratellishelados.com",
         },
         {
           id: "3",
-          title: "Hilitos Lili",
-          description: "Business Site",
+          title: t("projects.hilitosLili.title"),
+          description: t("projects.hilitosLili.description"),
           imagePath: "projects/3.jpeg",
           href: "https://hilitoslili.com",
         },
         {
           id: "4",
-          title: "MG Servicio Inmobiliario",
-          description: "Single Page",
+          title: t("projects.mgsi.title"),
+          description: t("projects.mgsi.description"),
           imagePath: "projects/4.jpeg",
           href: "https://mgsi.mx",
         },
         {
           id: "7",
-          title: "Rondo Productions",
-          description: "Portfolio & Services Site",
+          title: t("projects.rondoProductions.title"),
+          description: t("projects.rondoProductions.description"),
           imagePath: "projects/7.jpeg",
           href: "https://rondoproductions.com/",
         },
         {
           id: "8",
-          title: "Salomon Photo",
-          description: "Photographer Site",
+          title: t("projects.salomonPhoto.title"),
+          description: t("projects.salomonPhoto.description"),
           imagePath: "projects/8.jpeg",
           href: "https://salomon-mtz.github.io/sp.github.io/",
         },
         {
           id: "16",
-          title: "Faro Sur",
-          description: "Clothing Manufacturer Site",
+          title: t("projects.faroSur.title"),
+          description: t("projects.faroSur.description"),
           imagePath: "projects/16.jpeg",
           href: "https://farosur.netlify.app/",
         },
         {
           id: "9",
-          title: "Colegio Antonio José de Sucre",
-          description: "Education Site",
+          title: t("projects.colegioSucre.title"),
+          description: t("projects.colegioSucre.description"),
           imagePath: "projects/9.jpeg",
           href: "https://colegiosucre.netlify.app/",
         },
         {
           id: "10",
-          title: "Asesorista",
-          description: "Real Estate Site",
+          title: t("projects.asesorista.title"),
+          description: t("projects.asesorista.description"),
           imagePath: "projects/10.jpeg",
           href: "https://asesorista.com.mx",
         },
         {
           id: "11",
-          title: "Skin Secrets",
-          description: "Spa & Skin Care Site",
+          title: t("projects.skinSecrets.title"),
+          description: t("projects.skinSecrets.description"),
           imagePath: "projects/11.jpeg",
           href: "https://skinsecrets.mx",
         },
@@ -139,7 +141,7 @@ const ProjectSlider: React.FC = () => {
       const updatedProjects = await Promise.all(
         projectData.map(async (project) => {
           const { data } = supabase.storage
-            .from("AWD images") // Reemplaza con el nombre de tu bucket
+            .from("AWD images") // Your bucket name
             .getPublicUrl(project.imagePath);
 
           if (!data) {
@@ -155,7 +157,7 @@ const ProjectSlider: React.FC = () => {
     };
 
     fetchProjects();
-  }, []);
+  }, [t]);
 
   return (
     <Swiper
@@ -163,7 +165,7 @@ const ProjectSlider: React.FC = () => {
       spaceBetween={30}
       slidesPerView={1}
       navigation
-      grabCursor={true} // Enables grab cursor for a touch-like experience
+      grabCursor={true}
       autoplay={{
         delay: 5000,
         disableOnInteraction: false,

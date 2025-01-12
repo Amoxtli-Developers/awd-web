@@ -4,6 +4,7 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import ProcessSwiper from "@components/ProcessSwiper/ProcessSwiper";
+import { useTranslation } from "react-i18next"; // Import useTranslation
 
 const containerVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -24,6 +25,8 @@ const childVariants = {
 };
 
 const ProcessView = () => {
+  const { t } = useTranslation(); // Initialize translation hook
+
   return (
     <Box
       id="process"
@@ -49,7 +52,7 @@ const ProcessView = () => {
           justifyContent: "center",
           alignItems: "center",
           width: "100%",
-          mt: 0, // Remove any top margin for proper centering
+          mt: 0,
         }}
       >
         <Typography
@@ -60,11 +63,11 @@ const ProcessView = () => {
             fontSize: { xs: "48px", sm: "32px", md: "48px", lg: "64px" },
           }}
         >
-          How does the <br />
+          {t("process.title")}
+          <br />
           <span style={{ color: "#FA206F", fontWeight: "bold" }}>
-            process
-          </span>{" "}
-          work?
+            {t("process.highlight")}
+          </span>
         </Typography>
         <Typography
           variant="body1"
@@ -75,17 +78,18 @@ const ProcessView = () => {
             fontSize: { xs: "20px", sm: "20px", md: "28px", lg: "32px" },
           }}
         >
-          We guide you from{" "}
+          {t("process.description.start")}{" "}
           <span style={{ fontWeight: "bold", color: "#FA206F" }}>
-            idea to launch,
+            {t("process.description.important1")}
           </span>{" "}
-          ensuring a{" "}
+          {t("process.description.middle")}{" "}
           <span style={{ fontWeight: "bold", color: "#FA206F" }}>
-            smooth process
+            {t("process.description.important2")}
           </span>{" "}
-          with tailored planning, design, development, and support to bring your
-          vision to{" "}
-          <span style={{ fontWeight: "bold", color: "#FA206F" }}>life.</span>
+          {t("process.description.end")}{" "}
+          <span style={{ fontWeight: "bold", color: "#FA206F" }}>
+            {t("process.description.important3")}
+          </span>
         </Typography>
       </Box>
       <ProcessSwiper />

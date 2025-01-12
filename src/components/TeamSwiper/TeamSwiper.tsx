@@ -6,6 +6,7 @@ import { Autoplay } from "swiper/modules"; // Import the Autoplay module
 import "swiper/css";
 import { Card, CardContent, Typography } from "@mui/material";
 import Image from "next/image";
+import { useTranslation } from "react-i18next"; // Import useTranslation
 
 // Import images
 import salo from "@assets/team/salo.jpeg";
@@ -18,43 +19,45 @@ import dani from "@assets/team/dani.jpeg";
 const teamData = [
   {
     name: "Salomon",
-    position: "Ceo and Front-end lead",
+    positionKey: "team.ceo", // Clave de traducción
     image: salo,
     bgColor: "#FF0099",
   },
   {
     name: "Sofía",
-    position: "Cto and Back-end lead",
+    positionKey: "team.cto", // Clave de traducción
     image: sofy,
     bgColor: "#FF99C8",
   },
   {
     name: "Arturo",
-    position: "Co-founder & Back-end dev",
+    positionKey: "team.cofounderBackend", // Clave de traducción
     image: arthur,
     bgColor: "#F8D1FF",
   },
   {
     name: "Daniel",
-    position: "AI tech-lead",
+    positionKey: "team.aiLead", // Clave de traducción
     image: dani,
     bgColor: "#101010",
   },
   {
     name: "Rodrigo",
-    position: "Co-founder",
+    positionKey: "team.cofounder", // Clave de traducción
     image: ro,
     bgColor: "#FF99C8",
   },
   {
     name: "Isaac",
-    position: "Co-founder & Front-end dev",
+    positionKey: "team.cofounderFrontend", // Clave de traducción
     image: isic,
     bgColor: "#F8D1FF",
   },
 ];
 
 const TeamSwiper = () => {
+  const { t } = useTranslation(); // Initialize translation hook
+
   return (
     <Swiper
       spaceBetween={40}
@@ -115,7 +118,9 @@ const TeamSwiper = () => {
               >
                 {member.name}
               </Typography>
-              <Typography variant="body2">{member.position}</Typography>
+              <Typography variant="body2" sx={{fontWeight: 400}}>
+                {t(member.positionKey)} {/* Traducción dinámica */}
+              </Typography>
             </CardContent>
           </Card>
         </SwiperSlide>

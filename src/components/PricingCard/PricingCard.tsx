@@ -8,6 +8,7 @@ import {
   ListItem,
   Box,
 } from "@mui/material";
+import { useTranslation } from "react-i18next"; // Import useTranslation
 
 interface PricingCardProps {
   title: string;
@@ -28,6 +29,8 @@ const PricingCard: React.FC<PricingCardProps> = ({
   textColor = "#000000",
   href,
 }) => {
+  const { t } = useTranslation(); // Initialize translation hook
+
   return (
     <Card
       sx={{
@@ -121,7 +124,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
             fontSize: { xs: "16px", sm: "18px" }, // Responsive button font size
           }}
         >
-          Get Started &rarr;
+          {t("pricingCard.button")} &rarr;
         </Button>
       </CardActions>
     </Card>

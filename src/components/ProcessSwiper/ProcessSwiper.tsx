@@ -19,48 +19,45 @@ import scopingWhite from "@assets/process/white/scoping_white.gif";
 import reviewWhite from "@assets/process/white/review_white.gif";
 import supportWhite from "@assets/process/white/support_white.gif";
 import developmentWhite from "@assets/process/white/development_white.gif";
+import { useTranslation } from "react-i18next"; // Import useTranslation
 
 const ProcessSwiper: React.FC = () => {
+  const { t } = useTranslation(); // Initialize translation hook
+
   const processes = [
     {
-      title: "Discovering",
-      description:
-        "1-week phase to ensure project fit with technical, budget, and timeline alignment.",
+      title: t("processSwiper.discovering.title"),
+      description: t("processSwiper.discovering.description"),
       imageSrc: discoverBlack.src,
       hoverImageSrc: discoverWhite.src,
     },
     {
-      title: "Scoping",
-      description:
-        "2-3 weeks to detail requirements, budget, and timeline for your app.",
+      title: t("processSwiper.scoping.title"),
+      description: t("processSwiper.scoping.description"),
       imageSrc: scopingBlack.src,
       hoverImageSrc: scopingWhite.src,
     },
     {
-      title: "Design",
-      description:
-        "1-2 weeks to create high-fidelity mockups and align on the design.",
+      title: t("processSwiper.design.title"),
+      description: t("processSwiper.design.description"),
       imageSrc: desingBlack.src,
       hoverImageSrc: desingWhite.src,
     },
     {
-      title: "Development",
-      description:
-        "Development phase, ranging from 1 week to several months, to build and test your app.",
+      title: t("processSwiper.development.title"),
+      description: t("processSwiper.development.description"),
       imageSrc: developmentBlack.src,
       hoverImageSrc: developmentWhite.src,
     },
     {
-      title: "Review",
-      description:
-        "1-month phase to review and ensure the final product meets your expectations.",
+      title: t("processSwiper.review.title"),
+      description: t("processSwiper.review.description"),
       imageSrc: reviewBlack.src,
       hoverImageSrc: reviewWhite.src,
     },
     {
-      title: "Support",
-      description:
-        "Ongoing or one-time support to continuously improve your app post-launch.",
+      title: t("processSwiper.support.title"),
+      description: t("processSwiper.support.description"),
       imageSrc: supportBlack.src,
       hoverImageSrc: supportWhite.src,
     },

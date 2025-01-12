@@ -1,0 +1,297 @@
+{
+    "navbar": {
+        "meetAWD": "Meet AWD",
+        "process": "Process",
+        "pricing": "Pricing",
+        "projects": "Projects",
+        "store": "Store",
+        "bookCall": "Book a call"
+    },
+        "hero": {
+        "backgroundAlt": "Background image",
+        "title": "We are",
+        "amoxtli": "Amoxtli",
+        "subtitle": "Web Developers",
+        "subheading": "amox·tli /ˈaːmoʃt͡ɬi/ nāhuatl: codex",
+        "description": "A software development startup founded in Mexico by a group of passionate engineers seeking to help startups and small businesses succeed in the digital world."
+    },
+    "about": {
+    "mission": "Our mission is to empower you with the essential tools to kickstart your online journey.",
+    "missionHighlight": "online journey.",
+    "dream": "Our dream is to make sure that good ideas are not lost and become a reality.",
+    "dreamHighlight1": "good ideas",
+    "dreamHighlight2": "reality.",
+    "teamTitle": "Meet the",
+    "teamHighlight": "Amoxtlers",
+    "grid1": "At Amoxtli, we are passionate developers creating innovative software solutions to simplify tasks and solve real-world challenges. Our mission is to transform ideas into impactful technology that improves lives and empowers businesses.",
+    "grid2": "At Amoxtli, the axolotl symbolizes resilience, adaptability, and innovation—values that drive our work. Beyond being our emblem, it represents our commitment to preserving Mexico’s heritage. We actively support axolotl sanctuaries through sponsorships and collaborations, helping protect this iconic species for future generations.",
+    "grid3": "At Amoxtli, we’ve delivered over 20 successful software projects across diverse industries, leveraging a wide range of technologies and programming languages. Our expertise enables us to craft innovative, tailor-made solutions that meet each client’s unique needs. Experience advanced custom software with Amoxtli, where innovation meets precision and quality.",
+    "grid4": "Amoxtli proudly participated in HackMx at Tecnológico de Monterrey, where we developed an innovative tool for Thales Enterprise. Using advanced AI models from Google and Happy Face, our solution analyzes and classifies 911 emergency calls to improve response efficiency and effectiveness. This project highlights our dedication to leveraging cutting-edge technology to address real-world challenges and support critical decision-making in emergency scenarios."
+  },
+  "team": {
+    "ceo": "CEO and Front-end Lead",
+    "cto": "CTO and Back-end Lead",
+    "cofounderBackend": "Co-founder & Back-end Developer",
+    "aiLead": "AI Tech Lead",
+    "cofounder": "Co-founder",
+    "cofounderFrontend": "Co-founder & Front-end Developer"
+  },
+  "process": {
+    "title": "How does the",
+    "highlight": "process work?",
+    "description": {
+      "start": "We guide you from",
+      "important1": "idea to launch,",
+      "middle": "ensuring a",
+      "important2": "smooth process",
+      "end": "with tailored planning, design, development, and support to bring your vision to",
+      "important3": "life."
+    }
+  },
+  "processSwiper": {
+    "discovering": {
+      "title": "Discovering",
+      "description": "1-week phase to ensure project fit with technical, budget, and timeline alignment."
+    },
+    "scoping": {
+      "title": "Scoping",
+      "description": "2-3 weeks to detail requirements, budget, and timeline for your app."
+    },
+    "design": {
+      "title": "Design",
+      "description": "1-2 weeks to create high-fidelity mockups and align on the design."
+    },
+    "development": {
+      "title": "Development",
+      "description": "Development phase, ranging from 1 week to several months, to build and test your app."
+    },
+    "review": {
+      "title": "Review",
+      "description": "1-month phase to review and ensure the final product meets your expectations."
+    },
+    "support": {
+      "title": "Support",
+      "description": "Ongoing or one-time support to continuously improve your app post-launch."
+    }
+  },
+  "pricing": {
+    "title": "Pricing Plans",
+    "subtitle": {
+      "start": "Find the perfect",
+      "important1": "plan",
+      "middle": "for your needs. Whether",
+      "important2": "starting out",
+      "end": "or scaling up, our plans offer the flexibility and features to help you succeed."
+    },
+    "singlePage": {
+      "title": "Single Page",
+      "price": "$4,500 MXN",
+      "description": "Perfect for personal projects or portfolios",
+      "features": {
+        "responsiveDesign": "Responsive Design",
+        "seoOptimized": "SEO Optimized",
+        "fastLoading": "Fast Loading Speed",
+        "basicAnalytics": "Basic Analytics",
+        "sslCertificate": "SSL Certificate",
+        "ctaBanners": "CTA Banners",
+        "pages": "1 Page"
+      }
+    },
+    "landingPage": {
+      "title": "Landing Page",
+      "price": "$8,000 MXN",
+      "description": "Built to drive conversions and capture leads",
+      "features": {
+        "customDesign": "Custom Design",
+        "seoOptimized": "SEO Optimized",
+        "emailIntegration": "Email Marketing Integration",
+        "leadForms": "Lead Capture Forms",
+        "advancedAnalytics": "Advanced Analytics",
+        "ctaBanners": "CTA Banners",
+        "pages": "Up to 4 Pages"
+      }
+    },
+    "ecommerce": {
+      "title": "E-commerce",
+      "price": "$20,000 MXN",
+      "description": "Robust solution for your online store",
+      "features": {
+        "customDesign": "Custom Design",
+        "paymentGateway": "Checkout Payment Gateway Setup",
+        "inventoryManagement": "Inventory Management",
+        "shoppingCart": "Shopping cart configuration",
+        "advancedAnalytics": "Advanced Analytics",
+        "salesDashboard": "Sales Dashboard",
+        "pages": "Up to 8 Pages"
+      }
+    },
+    "brandDesign": {
+      "title": "Brand Design",
+      "price": "$3,500 MXN",
+      "description": "Ideal for starting your brand or startup",
+      "features": {
+        "logoDesign": "Logo Design",
+        "colorPalette": "Color Palette Selection",
+        "typography": "Typography Guidelines",
+        "styleGuide": "Basic Brand Style Guide",
+        "revisions": "Two Design Revisions",
+        "finalFiles": "Final files in multiple formats (PNG, SVG, PDF, AI)"
+      }
+    }
+  },
+  "pricingCard": {
+    "button": "Get Started"
+  },
+  "projectsView": {
+    "title": "Our Work in",
+    "action": "action",
+    "subtitle": {
+      "start": "Explore our portfolio of projects, showcasing",
+      "innovative": "innovative",
+      "middle": "solutions and",
+      "impactful": "impactful",
+      "end": "results crafted for our clients."
+    },
+    "callToAction": {
+      "title": {
+        "start": "Ready to take your",
+        "highlight": "first step",
+        "end": "and rise to your digital potential?"
+      },
+      "subtitle": "Book a 30-minute call to get feedback and a budget estimate from our expert team.",
+      "button": "Book a call"
+    }
+  },
+  "projects": {
+    "reptilario": {
+      "title": "Reptilario y Ajolotario Quetzal",
+      "description": "Axolotl Refugee Site"
+    },
+    "greek": {
+      "title": "Greek",
+      "description": "DJ Site"
+    },
+    "neuralFactory": {
+      "title": "Neural Factory",
+      "description": "Big Data Company Site"
+    },
+    "xianna": {
+      "title": "Xianna",
+      "description": "Fashion Blog"
+    },
+    "orzaTech": {
+      "title": "Orza Tech",
+      "description": "Startup Site"
+    },
+    "psiqueSer": {
+      "title": "Psique & Ser",
+      "description": "Business Site"
+    },
+    "cmc": {
+      "title": "Contadores Martínez Carreño y Asociados",
+      "description": "Single Page"
+    },
+    "fratellis": {
+      "title": "Fratelli's Helados",
+      "description": "Landing Page"
+    },
+    "hilitosLili": {
+      "title": "Hilitos Lili",
+      "description": "Business Site"
+    },
+    "mgsi": {
+      "title": "MG Servicio Inmobiliario",
+      "description": "Single Page"
+    },
+    "rondoProductions": {
+      "title": "Rondo Productions",
+      "description": "Portfolio & Services Site"
+    },
+    "salomonPhoto": {
+      "title": "Salomon Photo",
+      "description": "Photographer Site"
+    },
+    "faroSur": {
+      "title": "Faro Sur",
+      "description": "Clothing Manufacturer Site"
+    },
+    "colegioSucre": {
+      "title": "Colegio Antonio José de Sucre",
+      "description": "Education Site"
+    },
+    "asesorista": {
+      "title": "Asesorista",
+      "description": "Real Estate Site"
+    },
+    "skinSecrets": {
+      "title": "Skin Secrets",
+      "description": "Spa & Skin Care Site"
+    }
+  },
+  "testimonials": {
+    "orza": {
+      "quote": "Our business website is now faster, more responsive, and beautifully designed. The team perfectly captured our vision and delivered a seamless user experience.",
+      "name": "Andrés I.",
+      "designation": "CEO at Orza Tech"
+    },
+    "fratellis": {
+      "quote": "The e-commerce platform built for us has taken our sales to the next level. The intuitive design and performance improvements exceeded all expectations.",
+      "name": "Laura O.",
+      "designation": "Owner at Fratelli's Helados"
+    },
+    "rondo": {
+      "quote": "The portfolio site created for us is stunning and functional. It perfectly showcases our work and has helped us gain more clients. Truly outstanding work!",
+      "name": "Omar D.",
+      "designation": "Creative Director at Rondo Productions"
+    },
+    "sucre": {
+      "quote": "Our educational site is now a hub for interactive learning and easy access for parents. The team's attention to detail and creativity made all the difference.",
+      "name": "Patricia A.",
+      "designation": "Principal at Colegio Antonio José de Sucre"
+    }
+  },
+  "footer": {
+    "links": {
+      "axoStore": "Axo Store",
+      "helpAxolotls": "Help the Axolotls",
+      "visitSanctuary": "Visit AxoSanctuary"
+    },
+    "social": {
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn"
+    },
+    "contact": "contact@amoxtli.tech"
+  },
+  "store": {
+    "title": {
+      "part1": "What is",
+      "part2": "AWD Store?"
+    },
+    "supports": {
+      "awdStore": "AWD Store",
+      "text1": "supports",
+      "quetzal": "Reptilario y Ajolotario Quetzal",
+      "text2": "by donating a percentage of",
+      "axomerch": "Axomerch",
+      "text3": "sales to cover the costs of operation, food, and care for axolotls. Every purchase helps protect this unique species and sustain their",
+      "conservation": "conservation efforts"
+    },
+    "products": {
+      "hoodie": {
+        "title": "AXO-Hoodie",
+        "price": "Soon available"
+      },
+      "cap": {
+        "title": "AXO-Cap",
+        "price": "Soon available"
+      },
+      "tshirt": {
+        "title": "AXO-Tshirt",
+        "price": "Soon available"
+      }
+    }
+  }
+}
+
+  

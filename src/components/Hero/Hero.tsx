@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { supabase } from "@utils/supabaseClient";
+import { useTranslation } from "react-i18next"; // Import useTranslation
 
 const textVariants = {
   hidden: { opacity: 0, x: 50 },
@@ -22,13 +23,14 @@ const textVariants = {
 };
 
 const Hero = () => {
+  const { t } = useTranslation(); // Initialize translation hook
   const [heroImageUrl, setHeroImageUrl] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchHeroImage = async () => {
       const { data } = await supabase.storage
-        .from("AWD images") // Reemplaza con el nombre de tu bucket
-        .getPublicUrl("hero/hero.jpg"); // Ruta dentro del bucket
+        .from("AWD images") // Replace with your bucket name
+        .getPublicUrl("hero/hero.jpg"); // Path inside the bucket
 
       if (!data) {
         console.error("Error fetching hero image");
@@ -64,7 +66,7 @@ const Hero = () => {
         >
           <Image
             src={heroImageUrl}
-            alt="Background"
+            alt={t("hero.backgroundAlt")}
             layout="fill"
             objectFit="cover"
             objectPosition="center"
@@ -106,8 +108,9 @@ const Hero = () => {
               fontSize: { xs: "56px", sm: "72px", md: "80px", lg: "96px" },
             }}
           >
-            We are <strong>Amoxtli</strong> <br />
-            <strong>Web Developers</strong>
+            {t("hero.title")} <strong>{t("hero.amoxtli")}</strong>
+            <br />
+            <strong>{t("hero.subtitle")}</strong>
           </Typography>
         </motion.div>
 
@@ -121,7 +124,7 @@ const Hero = () => {
               mt: 2,
             }}
           >
-            amox·tli /ˈaːmoʃt͡ɬi/ nāhuatl: codex
+            {t("hero.subheading")}
           </Typography>
         </motion.div>
 
@@ -135,11 +138,7 @@ const Hero = () => {
               fontSize: { xs: "18px", sm: "28px", md: "32px", lg: "40px" },
             }}
           >
-            A software development startup founded in{" "}
-            <span style={{ fontWeight: "bold" }}>Mexico</span> by a group of
-            passionate engineers seeking to help startups and small businesses
-            succeed in the{" "}
-            <span style={{ fontWeight: "bold" }}>digital world</span>.
+            {t("hero.description")}
           </Typography>
         </motion.div>
       </Box>

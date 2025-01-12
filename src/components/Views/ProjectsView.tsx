@@ -1,17 +1,12 @@
 "use client";
 
 import React from "react";
-import {
-  Box,
-  Card,
-  CardContent,
-  Typography,
-} from "@mui/material";
+import { Box, Card, CardContent, Typography, Grid } from "@mui/material";
 import { motion } from "framer-motion";
-import ProjectSlider from "@components/ProjectSlider/ProjectSlider"; // Import the ProjectSlider component
+import ProjectSlider from "@components/ProjectSlider/ProjectSlider";
 import { AnimatedTestimonialsDemo } from "@components/AnimatedTestimonialsDemo";
-import { Grid } from "@mui/material";
 import AWDButton from "@components/AWDButton/AWDButton";
+import { useTranslation } from "react-i18next";
 
 const containerVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -32,6 +27,8 @@ const childVariants = {
 };
 
 const ProjectsView = () => {
+  const { t } = useTranslation();
+
   return (
     <Box
       id="projects"
@@ -57,7 +54,7 @@ const ProjectsView = () => {
           justifyContent: "center",
           alignItems: "center",
           width: "100%",
-          mt: 0, // Remove any top margin for proper centering
+          mt: 0,
         }}
       >
         <Typography
@@ -68,8 +65,10 @@ const ProjectsView = () => {
             fontSize: { xs: "48px", sm: "32px", md: "48px", lg: "64px" },
           }}
         >
-          Our Work in <br />
-          <span style={{ color: "#FA206F", fontWeight: "bold" }}>action</span>
+          {t("projectsView.title")} <br />
+          <span style={{ color: "#FA206F", fontWeight: "bold" }}>
+            {t("projectsView.action")}
+          </span>
         </Typography>
         <Typography
           variant="body1"
@@ -80,16 +79,15 @@ const ProjectsView = () => {
             fontSize: { xs: "20px", sm: "20px", md: "28px", lg: "32px" },
           }}
         >
-          Explore our portfolio of projects, showcasing{" "}
+          {t("projectsView.subtitle.start")}{" "}
           <span style={{ fontWeight: "bold", color: "#FA206F" }}>
-            innovative
+            {t("projectsView.subtitle.innovative")}
           </span>{" "}
-          solutions and
+          {t("projectsView.subtitle.middle")}{" "}
           <span style={{ fontWeight: "bold", color: "#FA206F" }}>
-            impactful
+            {t("projectsView.subtitle.impactful")}
           </span>{" "}
-          results crafted for our{" "}
-          <span style={{ fontWeight: "bold", color: "#FA206F" }}>clients.</span>
+          {t("projectsView.subtitle.end")}
         </Typography>
       </Box>
 
@@ -102,6 +100,7 @@ const ProjectsView = () => {
       >
         <ProjectSlider />
       </Box>
+
       <Grid container spacing={2} sx={{ mt: { xs: 4, sm: 6, md: 8 } }}>
         <Grid item xs={12} md={6}>
           <AnimatedTestimonialsDemo />
@@ -127,11 +126,11 @@ const ProjectsView = () => {
                   mb: 2,
                 }}
               >
-                Ready to take your{" "}
+                {t("projectsView.callToAction.title.start")}{" "}
                 <span style={{ color: "#FA206F", fontWeight: "bold" }}>
-                  first step
+                  {t("projectsView.callToAction.title.highlight")}
                 </span>{" "}
-                and rise to your digital potential?
+                {t("projectsView.callToAction.title.end")}
               </Typography>
               <Typography
                 variant="body1"
@@ -141,8 +140,7 @@ const ProjectsView = () => {
                   mb: 4,
                 }}
               >
-                Book a 30-minute call to get feedback and a budget estimate from
-                our expert team.
+                {t("projectsView.callToAction.subtitle")}
               </Typography>
               <AWDButton
                 link="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1cdpJh66qBBGSsHQROwXAyx8-wogW4ICntw-FUVtXZnz9yYvrJCrrcGds46hdzJFa4Vo13qVeA"
@@ -152,7 +150,7 @@ const ProjectsView = () => {
                 hoverBackgroundColor="#FA206F"
                 hoverFontColor="#fbfbfb"
               >
-                Book a call
+                {t("projectsView.callToAction.button")}
               </AWDButton>
             </CardContent>
           </Card>

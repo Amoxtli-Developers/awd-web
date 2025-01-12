@@ -4,6 +4,7 @@ import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import PricingCard from "@components/PricingCard/PricingCard";
+import { useTranslation } from "react-i18next"; // Import useTranslation
 
 const containerVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -24,69 +25,71 @@ const childVariants = {
 };
 
 const PricingView = () => {
+  const { t } = useTranslation(); // Initialize translation hook
+
   const pricingPlans = [
     {
-      title: "Single Page",
-      price: "$4,500 MXN",
-      description: "Perfect for personal projects or portfolios",
+      title: t("pricing.singlePage.title"),
+      price: t("pricing.singlePage.price"),
+      description: t("pricing.singlePage.description"),
       bulletPoints: [
-        "Responsive Design",
-        "SEO Optimized",
-        "Fast Loading Speed",
-        "Basic Analytics",
-        "SSL Certificate",
-        "CTA Banners",
-        "1 Page",
+        t("pricing.singlePage.features.responsiveDesign"),
+        t("pricing.singlePage.features.seoOptimized"),
+        t("pricing.singlePage.features.fastLoading"),
+        t("pricing.singlePage.features.basicAnalytics"),
+        t("pricing.singlePage.features.sslCertificate"),
+        t("pricing.singlePage.features.ctaBanners"),
+        t("pricing.singlePage.features.pages"),
       ],
       backgroundColor: "#FFFFFF",
       textColor: "#000000",
       href: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3-Z0m1jTqkrAMsmX92MdfF--07g4sEkRlNqkxPwbCsd5vRnbtWFSMMoKaHHsNO0MJTAgZ0Lr8m",
     },
     {
-      title: "Landing Page",
-      price: "$8,000 MXN",
-      description: "Built to drive conversions and capture leads",
+      title: t("pricing.landingPage.title"),
+      price: t("pricing.landingPage.price"),
+      description: t("pricing.landingPage.description"),
       bulletPoints: [
-        "Custom Design",
-        "SEO Optimized",
-        "Email Marketing Integration",
-        "Lead Capture Forms",
-        "Advanced Analytics",
-        "CTA Banners",
-        "Up to 4 Pages",
+        t("pricing.landingPage.features.customDesign"),
+        t("pricing.landingPage.features.seoOptimized"),
+        t("pricing.landingPage.features.emailIntegration"),
+        t("pricing.landingPage.features.leadForms"),
+        t("pricing.landingPage.features.advancedAnalytics"),
+        t("pricing.landingPage.features.ctaBanners"),
+        t("pricing.landingPage.features.pages"),
       ],
       backgroundColor: "#FA206F",
       textColor: "#FFFFFF",
       href: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ194tE2ge5Fp80T3yPfH489R2KU6hQTbvfNSceg477tPE0wFWk6kp6tdbb4K2B5-Pd7zJPYz0NB",
     },
     {
-      title: "E-commerce",
-      price: "$20,000 MXN",
-      description: "Robust solution for your online store",
+      title: t("pricing.ecommerce.title"),
+      price: t("pricing.ecommerce.price"),
+      description: t("pricing.ecommerce.description"),
       bulletPoints: [
-        "Custom Design",
-        "Checkout Payment Gateway Setup",
-        "Inventory Management",
-        "Shopping cart configuration",
-        "Advanced Analytics",
-        "Sales Dashboard",
-        "Up to 8 Pages",
+        t("pricing.ecommerce.features.customDesign"),
+        t("pricing.ecommerce.features.paymentGateway"),
+        t("pricing.ecommerce.features.inventoryManagement"),
+        t("pricing.ecommerce.features.shoppingCart"),
+        t("pricing.ecommerce.features.advancedAnalytics"),
+        t("pricing.ecommerce.features.salesDashboard"),
+        t("pricing.ecommerce.features.pages"),
       ],
       backgroundColor: "#FFFFFF",
       textColor: "#000000",
       href: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0Mdzy_Bpm60JI7B4PLy94RvT3iOX49-_FLtvIwBVGO2LyhytH9-0Bn_hyVcIBhCBuAp0aNhl9d",
     },
     {
-      title: "Brand Design",
-      price: "$3,500 MXN",
-      description: "Ideal for starting your brand or startup",
+      title: t("pricing.brandDesign.title"),
+      price: t("pricing.brandDesign.price"),
+      description: t("pricing.brandDesign.description"),
       bulletPoints: [
-        "Logo Design",
-        "Color Palette Selection",
-        "Typography Guidelines",
-        "Basic Brand Style Guide",
-        "Two Design Revisions",
-        "Final files in multiple formats (PNG, SVG, PDF, AI)",
+        t("pricing.brandDesign.features.logoDesign"),
+        t("pricing.brandDesign.features.colorPalette"),
+        t("pricing.brandDesign.features.typography"),
+        t("pricing.brandDesign.features.styleGuide"),
+        t("pricing.brandDesign.features.revisions"),
+        t("pricing.brandDesign.features.finalFiles"),
       ],
       backgroundColor: "#FFFFFF",
       textColor: "#000000",
@@ -130,7 +133,7 @@ const PricingView = () => {
             }}
           >
             <span style={{ color: "#FA206F", fontWeight: "bold" }}>AWD</span>{" "}
-            Pricing Plans
+            {t("pricing.title")}
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6} md={6}>
@@ -141,10 +144,15 @@ const PricingView = () => {
               fontSize: { xs: "20px", sm: "20px", md: "28px", lg: "32px" },
             }}
           >
-            Find the perfect{" "}
-            <span style={{ fontWeight: "bold", color: "#FA206F" }}>plan</span>{" "}
-            for your needs. Whether <span style={{ fontWeight: "bold", color: "#FA206F" }}>starting out</span> or <span style={{ fontWeight: "bold", color: "#FA206F" }}>scaling up,</span> our plans offer
-            the flexibility and features to help you <span style={{ fontWeight: "bold", color: "#FA206F" }}>succeed.</span>
+            {t("pricing.subtitle.start")}{" "}
+            <span style={{ fontWeight: "bold", color: "#FA206F" }}>
+              {t("pricing.subtitle.important1")}
+            </span>{" "}
+            {t("pricing.subtitle.middle")}{" "}
+            <span style={{ fontWeight: "bold", color: "#FA206F" }}>
+              {t("pricing.subtitle.important2")}
+            </span>{" "}
+            {t("pricing.subtitle.end")}
           </Typography>
         </Grid>
       </Grid>
