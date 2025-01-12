@@ -105,7 +105,7 @@ const Hero = () => {
             sx={{
               fontWeight: 400,
               lineHeight: 1.2,
-              fontSize: { xs: "56px", sm: "72px", md: "80px", lg: "96px" },
+              fontSize: { xs: "56px", sm: "72px", md: "80px", lg: "90px" },
             }}
           >
             {t("hero.title")} <strong>{t("hero.amoxtli")}</strong>
@@ -135,7 +135,7 @@ const Hero = () => {
             sx={{
               mt: 3,
               lineHeight: 1.8,
-              fontSize: { xs: "18px", sm: "28px", md: "32px", lg: "40px" },
+              fontSize: { xs: "18px", sm: "28px", md: "32px", lg: "38px" },
             }}
           >
             {t("hero.description")}
