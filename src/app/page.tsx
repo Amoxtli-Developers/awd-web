@@ -25,6 +25,11 @@ const Home: NextPage = () => {
       setIsLoading(false);
     }, 3000);
 
+    // Fire a page view conversion on this page
+    window.gtag("event", "conversion", {
+      send_to: "AW-11564510788/2KE2COqTsooaEMTcsYor",
+    });
+
     return () => clearTimeout(timer);
   }, []);
 
