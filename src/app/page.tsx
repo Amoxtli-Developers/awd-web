@@ -16,6 +16,8 @@ import AWDFooter from "@components/AWDFooter/AWDFooter";
 import ProjectsView from "@components/Views/ProjectsView";
 import AWDLoader from "@components/AWDLoader/AWDLoader";
 import { NextPage } from "next";
+import FloatingGifButton from "@components/FloatinButtont";
+import axo from "@assets/about/grid_2.gif";
 
 const Home: NextPage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -58,6 +60,11 @@ const Home: NextPage = () => {
           <PricingView />
           <ProjectsView />
           <AWDFooter />
+          <FloatingGifButton
+            gifSrc={axo}
+            tooltipText="Open AXO GPT"
+            redirectUrl="https://chatgpt.com/g/g-67c0b0dca5e8819188626380af172562-axo-gpt"
+          />
         </Box>
       </ThemeProvider>
     </I18nextProvider>
