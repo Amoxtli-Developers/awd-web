@@ -23,6 +23,12 @@
   "brand": {
     "logoAlt": "Amoxtli logo"
   },
+  "contact": {
+    "note": "We work with startups, founders, and small teams who care about craft.",
+    "primaryCta": "Book a call",
+    "subtitle": "Tell us about your idea and we will respond with clarity, timelines, and next steps.",
+    "title": "Build with purpose."
+  },
   "cookies": {
     "accept": "Accept all",
     "alwaysOn": "Always on",

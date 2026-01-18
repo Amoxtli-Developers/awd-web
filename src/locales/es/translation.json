@@ -23,6 +23,12 @@
   "brand": {
     "logoAlt": "Logotipo de Amoxtli"
   },
+  "contact": {
+    "note": "Trabajamos con startups, fundadores y equipos pequeños que cuidan el detalle.",
+    "primaryCta": "Agenda una llamada",
+    "subtitle": "Cuéntanos tu idea y te responderemos con claridad, tiempos y próximos pasos.",
+    "title": "Construye con propósito."
+  },
   "cookies": {
     "accept": "Aceptar todo",
     "alwaysOn": "Siempre activas",
