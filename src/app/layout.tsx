@@ -1,147 +1,187 @@
 import type { Metadata } from "next";
+import { cookies } from "next/headers";
+import Script from "next/script";
 import "./globals.css";
-import { Quicksand } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
+import en from "../locales/en/translation.json";
+import es from "../locales/es/translation.json";
 
-const quicksand = Quicksand({
-  variable: "--font-quicksand",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Amoxtli Web Developers | Empowering Startups with Digital Excellence",
-  description:
-    "Amoxtli Web Developers specializes in web development, app design, and digital branding to help startups and businesses in Mexico and beyond succeed in the digital age.",
-  themeColor: "#fa206f",
-  icons: {
-    icon: "/assets/favicon2.png",
-  },
-  openGraph: {
-    title: "Amoxtli Web Developers | Digital Excellence for Startups",
-    description:
-      "Empowering businesses with custom web development, mobile apps, and branding solutions. Discover how Amoxtli can elevate your digital presence.",
-    url: "https://www.amoxtli.tech",
-    siteName: "Amoxtli Web Developers",
-    images: [
-      {
-        url: "/assets/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Amoxtli Web Developers - Crafting Digital Success",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Amoxtli Web Developers | Digital Excellence for Startups",
-    description:
-      "Custom web development, mobile apps, and digital branding tailored for startups and businesses. Boost your online presence with Amoxtli.",
-    images: ["/assets/og-image.png"],
-    site: "@amoxtli", // Replace with your actual Twitter handle
-  },
-  authors: [{ name: "Salomón Martínez", url: "https://www.amoxtli.tech" }],
-  keywords: [
-    "Amoxtli",
-    "Web Developers",
-    "Digital Success",
-    "Startups",
-    "Web Development",
-    "Software",
-    "Apps",
-    "Web Design",
-    "UI/UX Design",
-    "Digital Branding",
-    "SEO Services",
-    "Tech Solutions",
-    "Technology Innovation",
-    "E-commerce Solutions",
-    "Mobile App Development",
-    "Mexican Developers",
-    "Next.js Developers",
-    "React Developers",
-    "Affordable Web Design",
-    "Custom Software",
-    "Cloud Integration",
-    "Responsive Websites",
-    "Progressive Web Apps",
-    "Creative Agency",
-    "Brand Strategy",
-    "Logo Design",
-    "Social Media Marketing",
-    "Business Websites",
-    "Modern UI Design",
-    "Interactive Websites",
-    "Professional Web Hosting",
-    "Scalable Web Solutions",
-    "Digital Transformation",
-    "Agile Development",
-    "Frontend Development",
-    "Backend Development",
-    "Cross-Platform Apps",
-    "Digital Marketing",
-    "Business Growth",
-    "Custom Web Design",
-    "Tech Startups",
-    "Web Optimization",
-    "Digital Identity",
-    "Online Presence",
-    "Corporate Websites",
-    "Landing Pages",
-    "CMS Integration",
-    "Startup Success",
-    "Mobile-Friendly Websites",
-    "Web Development in Mexico",
-    "Full-Stack Developers",
-    "Website Redesign",
-    "Affordable Web Solutions",
-    "Online Branding",
-    "User-Centered Design",
-    "Innovation in Tech",
-    "High-Performance Websites",
-    "Future-Ready Apps",
-    "Creative Web Solutions",
-    "Amoxtli Digital Services",
-    "Web Apps Development",
-    "Business Success",
-    "Affordable SEO",
-  ],
-  robots: {
-    index: true,
-    follow: true,
-  },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
+const getMeta = (lang: "en" | "es") => {
+  const data = lang === "es" ? es : en;
+  return data.meta;
 };
 
-export default function RootLayout({
+export async function generateMetadata(): Promise<Metadata> {
+  const cookieStore = await cookies();
+  const lang = cookieStore.get("amoxtli-language")?.value === "es" ? "es" : "en";
+  const meta = getMeta(lang);
+  const baseUrl = new URL("https://www.amoxtli.tech");
+
+  return {
+    metadataBase: baseUrl,
+    title: meta.title,
+    description: meta.description,
+    themeColor: "#FA1F6F",
+    applicationName: "Amoxtli",
+    category: "technology",
+    referrer: "origin-when-cross-origin",
+    icons: {
+      icon: "/assets/favicon.png",
+    },
+    alternates: {
+      canonical: "/",
+      languages: {
+        "en-US": "/?lang=en",
+        "es-MX": "/?lang=es",
+      },
+    },
+    openGraph: {
+      title: meta.ogTitle,
+      description: meta.ogDescription,
+      url: baseUrl,
+      siteName: "Amoxtli",
+      images: [
+        {
+          url: "/assets/og-image.png",
+          width: 512,
+          height: 512,
+          alt: meta.ogAlt,
+        },
+      ],
+      locale: lang === "es" ? "es_MX" : "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.twitterTitle,
+      description: meta.twitterDescription,
+      images: ["/assets/og-image.png"],
+      site: "@amoxtli",
+    },
+    authors: [{ name: "Salomón Martínez", url: "https://www.amoxtli.tech" }],
+    keywords: meta.keywords,
+    robots: {
+      index: true,
+      follow: true,
+    },
+    viewport: {
+      width: "device-width",
+      initialScale: 1,
+      maximumScale: 1,
+    },
+  };
+}
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const lang = (await cookies()).get("amoxtli-language")?.value === "es" ? "es" : "en";
+  const meta = getMeta(lang);
+  const orgJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Amoxtli",
+    url: "https://www.amoxtli.tech",
+    logo: "https://www.amoxtli.tech/assets/logo.svg",
+    email: "hello@amoxtli.tech",
+    sameAs: [
+      "https://www.instagram.com/amoxtli.tech",
+      "https://www.linkedin.com/company/amoxtli-web-developers",
+    ],
+    slogan:
+      lang === "es"
+        ? "Tecnología con propósito para startups y equipos en crecimiento"
+        : "Technology with purpose for startups and growing teams",
+  };
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Amoxtli",
+    url: "https://www.amoxtli.tech",
+    inLanguage: lang === "es" ? "es-MX" : "en-US",
+    description: meta.description,
+    publisher: {
+      "@type": "Organization",
+      name: "Amoxtli",
+    },
+  };
+  const webPageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: meta.title,
+    description: meta.description,
+    url: "https://www.amoxtli.tech/",
+    inLanguage: lang === "es" ? "es-MX" : "en-US",
+    isPartOf: {
+      "@type": "WebSite",
+      name: "Amoxtli",
+      url: "https://www.amoxtli.tech",
+    },
+  };
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType:
+      lang === "es"
+        ? "Desarrollo de software, apps, SaaS, web y branding"
+        : "Software, app, SaaS, web, and branding development",
+    provider: {
+      "@type": "Organization",
+      name: "Amoxtli",
+      url: "https://www.amoxtli.tech",
+    },
+    areaServed: "MX",
+  };
+
   return (
-    <html lang="en">
-      <head>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-11564510788"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-11564510788');
-            `,
-          }}
-        />
-      </head>
-      <body className={`${quicksand.variable} antialiased`}>{children}</body>
+    <html lang={lang === "es" ? "es" : "en"}>
+      <head />
+      <body className={`${spaceGrotesk.variable} antialiased`}>{children}</body>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-11564510788"
+        strategy="afterInteractive"
+      />
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-11564510788');
+          `,
+        }}
+      />
+      <Script
+        id="ld-org"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+      />
+      <Script
+        id="ld-website"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
+      <Script
+        id="ld-service"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <Script
+        id="ld-webpage"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
+      />
     </html>
   );
 }

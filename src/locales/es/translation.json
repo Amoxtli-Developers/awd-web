@@ -1,295 +1,342 @@
 {
-    "navbar": {
-      "meetAWD": "Conoce AWD",
-      "process": "Proceso",
-      "pricing": "Precios",
-      "projects": "Proyectos",
-      "store": "Tienda",
-      "bookCall": "Agenda una llamada"
-    },
-    "hero": {
-    "backgroundAlt": "Imagen de fondo",
-    "title": "Somos",
-    "amoxtli": "Amoxtli",
-    "subtitle": "Web Developers",
-    "subheading": "amox·tli /ˈaːmoʃt͡ɬi/ nāhuatl: códice",
-    "description": "Una startup de desarrollo de software fundada en México por un grupo de ingenieros apasionados que buscan ayudar a startups y pequeñas empresas a tener éxito en el mundo digital."
-  },
   "about": {
-    "mission": "Nuestra misión es brindarte las herramientas esenciales para iniciar tu viaje en línea.",
-    "missionHighlight": "viaje en línea.",
-    "dream": "Nuestro sueño es asegurar que las buenas ideas no se pierdan y se conviertan en realidad.",
-    "dreamHighlight1": "buenas ideas",
-    "dreamHighlight2": "realidad.",
-    "teamTitle": "Conoce a los",
-    "teamHighlight": "Amoxtlers",
-    "grid1": "En Amoxtli, somos desarrolladores apasionados que crean soluciones innovadoras de software para simplificar tareas y resolver desafíos del mundo real. Nuestra misión es transformar ideas en tecnología impactante que mejora vidas y empodera negocios.",
-    "grid2": "En Amoxtli, el ajolote simboliza resiliencia, adaptabilidad e innovación—valores que guían nuestro trabajo. Más allá de ser nuestro emblema, representa nuestro compromiso con la preservación del patrimonio de México. Apoyamos activamente los santuarios de ajolotes mediante patrocinios y colaboraciones, ayudando a proteger esta especie icónica para las futuras generaciones.",
-    "grid3": "En Amoxtli, hemos entregado más de 20 proyectos exitosos de software en diversas industrias, aprovechando una amplia gama de tecnologías y lenguajes de programación. Nuestra experiencia nos permite crear soluciones innovadoras y personalizadas que satisfacen las necesidades únicas de cada cliente. Experimenta software avanzado y a medida con Amoxtli, donde la innovación se encuentra con la precisión y la calidad.",
-    "grid4": "Amoxtli participó con orgullo en HackMx en el Tecnológico de Monterrey, donde desarrollamos una herramienta innovadora para Thales Enterprise. Usando modelos avanzados de IA de Google y Happy Face, nuestra solución analiza y clasifica llamadas de emergencia al 911 para mejorar la eficiencia y la efectividad de la respuesta. Este proyecto destaca nuestra dedicación a aprovechar la tecnología de punta para abordar desafíos del mundo real y respaldar la toma de decisiones críticas en escenarios de emergencia."
+    "focus": "Software a la medida, apps, SaaS, web y sistemas de marca con experiencias consistentes.",
+    "focusTitle": "Enfoque",
+    "goals": "Ayudar a empresas a ser digitales y expandirse con herramientas impulsadas por IA.",
+    "goalsTitle": "Metas",
+    "metrics": {
+      "ai": "IA aplicada",
+      "automation": "Flujos listos para automatizar",
+      "industries": "Enfoque multi‑industria",
+      "products": "Productos Amoxtli para operaciones reales",
+      "projects": "20+ proyectos entregados",
+      "tech": "Tecnología moderna"
+    },
+    "missionShort": "Creamos tecnología con propósito.",
+    "objective": "Cada proyecto y producto se diseña para resolver problemas reales, elevar marcas y generar impacto medible.",
+    "objectives": "Crear tecnología que mejore flujos reales y genere resultados de negocio medibles.",
+    "objectivesTitle": "Objetivos",
+    "teamAlt": "Equipo de Amoxtli",
+    "values": "Innovación con propósito, colaboración clara y ejecución sólida en cada industria que atendemos.",
+    "valuesTitle": "Valores"
   },
-  "team": {
-    "ceo": "CEO y Líder de Front-end",
-    "cto": "CTO y Líder de Back-end",
-    "cofounderBackend": "Co-fundador y Desarrollador Back-end",
-    "aiLead": "Líder de Tecnología en IA",
-    "cofounder": "Co-fundador",
-    "cofounderFrontend": "Co-fundador y Desarrollador Front-end"
+  "brand": {
+    "logoAlt": "Logotipo de Amoxtli"
   },
-  "process": {
-    "title": "¿Cómo funciona el",
-    "highlight": "proceso?",
-    "description": {
-      "start": "Te guiamos desde",
-      "important1": "la idea hasta el lanzamiento,",
-      "middle": "asegurando un",
-      "important2": "proceso fluido",
-      "end": "con planificación, diseño, desarrollo y soporte personalizados para hacer realidad tu visión",
-      "important3": "en la vida."
+  "cookies": {
+    "accept": "Aceptar todo",
+    "alwaysOn": "Siempre activas",
+    "analytics": {
+      "description": "Nos ayuda a entender el uso y mejorar el rendimiento.",
+      "title": "Analítica"
+    },
+    "close": "Cerrar",
+    "customize": "Personalizar",
+    "marketing": {
+      "description": "Se usan para medir campañas y personalizar contenido.",
+      "title": "Marketing"
+    },
+    "message": "Usamos cookies para mejorar la experiencia y entender cómo se usa el sitio.",
+    "necessary": {
+      "description": "Requeridas para funciones básicas, seguridad y preferencias de idioma.",
+      "title": "Necesarias"
+    },
+    "reject": "Rechazar",
+    "save": "Guardar preferencias",
+    "subtitle": "Elige qué cookies permitir. Las necesarias están siempre activas para que el sitio funcione.",
+    "title": "Preferencias de cookies"
+  },
+  "footer": {
+    "backToTop": "Volver arriba",
+    "contact": "hello@amoxtli.tech",
+    "copyright": "© 2026 Amoxtli®",
+    "links": {
+      "helpAxolotls": "Ayuda a los Ajolotes",
+      "visitSanctuary": "Conviértete en aliado"
+    },
+    "rights": "Todos los derechos reservados.",
+    "sections": {
+      "links": "Enlaces",
+      "social": "Social"
+    },
+    "social": {
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
     }
   },
-  "processSwiper": {
-    "discovering": {
-      "title": "Descubrimiento",
-      "description": "Fase de 1 semana para asegurar el ajuste del proyecto con alineación técnica, presupuestaria y de tiempos."
-    },
-    "scoping": {
-      "title": "Definición",
-      "description": "2-3 semanas para detallar requisitos, presupuesto y cronograma para tu aplicación."
-    },
-    "design": {
-      "title": "Diseño",
-      "description": "1-2 semanas para crear maquetas de alta fidelidad y alinear el diseño."
-    },
-    "development": {
-      "title": "Desarrollo",
-      "description": "Fase de desarrollo, que puede durar de 1 semana a varios meses, para construir y probar tu aplicación."
-    },
-    "review": {
-      "title": "Revisión",
-      "description": "Fase de 1 mes para revisar y garantizar que el producto final cumpla con tus expectativas."
-    },
-    "support": {
-      "title": "Soporte",
-      "description": "Soporte continuo o único para mejorar continuamente tu aplicación después del lanzamiento."
-    }
+  "hero": {
+    "backgroundAlt": "Imagen de fondo",
+    "description": "Una startup de desarrollo de software fundada en México por un grupo de ingenieros apasionados que buscan ayudar a startups y pequeñas empresas a tener éxito en el mundo digital.",
+    "primaryCta": "Agenda una llamada",
+    "secondaryCta": "Ver proyectos",
+    "subheading": "amox·tli /ˈaːmoʃt͡ɬi/ nāhuatl: códice",
+    "title": "Somos"
+  },
+  "meta": {
+    "title": "Amoxtli | Software, Branding y Sistemas Digitales con Propósito",
+    "description": "Amoxtli es un estudio digital en México que crea software a la medida, apps, SaaS, sitios web, sistemas de marca y flujos con IA para startups y equipos en crecimiento.",
+    "ogTitle": "Amoxtli | Software, Branding y Sistemas Digitales con Propósito",
+    "ogDescription": "Software a la medida, apps, SaaS, web, branding y sistemas con IA para que startups y equipos avancen con claridad y velocidad.",
+    "ogAlt": "Amoxtli — software, branding y sistemas digitales",
+    "twitterTitle": "Amoxtli | Software, Branding y Sistemas Digitales",
+    "twitterDescription": "Estudio en México que construye software, apps, SaaS, sitios web, branding y flujos con IA para startups y equipos.",
+    "keywords": [
+      "Amoxtli",
+      "desarrollo de software México",
+      "software a la medida",
+      "desarrollo web",
+      "desarrollo de apps",
+      "SaaS",
+      "diseño de producto",
+      "sistemas de marca",
+      "diseño de logo",
+      "UX UI",
+      "transformación digital",
+      "flujos con IA",
+      "automatización",
+      "estudio digital para startups",
+      "CDMX tecnología",
+      "Next.js",
+      "React",
+      "diseño y desarrollo web",
+      "branding en México",
+      "analítica y SEO"
+    ]
+  },
+  "nav": {
+    "closeMenu": "Cerrar menú",
+    "langEn": "EN",
+    "langEs": "ES",
+    "languageLabel": "Selector de idioma",
+    "openMenu": "Abrir menú"
+  },
+  "navbar": {
+    "bookCall": "Agenda una llamada",
+    "meetAWD": "Conoce AWD",
+    "pricing": "Precios",
+    "process": "Proceso",
+    "projects": "Proyectos",
+    "services": "Servicios",
+    "testimonials": "Testimonios"
   },
   "pricing": {
-    "title": "Planes de precios",
-    "subtitle": {
-      "start": "Encuentra el",
-      "important1": "plan",
-      "middle": "perfecto para tus necesidades. Ya sea que estés",
-      "important2": "empezando",
-      "end": "o creciendo, nuestros planes ofrecen la flexibilidad y características para ayudarte a tener éxito."
-    },
-    "singlePage": {
-      "title": "Página Única",
-      "price": "$4,500 MXN",
-      "description": "Perfecto para proyectos personales o portafolios",
-      "features": {
-        "responsiveDesign": "Diseño Responsivo",
-        "seoOptimized": "Optimización SEO",
-        "fastLoading": "Velocidad de Carga Rápida",
-        "basicAnalytics": "Analíticas Básicas",
-        "sslCertificate": "Certificado SSL",
-        "ctaBanners": "Banners CTA",
-        "pages": "1 Página"
-      }
-    },
-    "landingPage": {
-      "title": "Página de Destino",
-      "price": "$8,000 MXN",
-      "description": "Diseñada para generar conversiones y captar leads",
-      "features": {
-        "customDesign": "Diseño Personalizado",
-        "seoOptimized": "Optimización SEO",
-        "emailIntegration": "Integración con Email Marketing",
-        "leadForms": "Formularios de Captura de Leads",
-        "advancedAnalytics": "Analíticas Avanzadas",
-        "ctaBanners": "Banners CTA",
-        "pages": "Hasta 4 Páginas"
-      }
-    },
-    "ecommerce": {
-      "title": "Comercio Electrónico",
-      "price": "$20,000 MXN",
-      "description": "Solución robusta para tu tienda en línea",
-      "features": {
-        "customDesign": "Diseño Personalizado",
-        "paymentGateway": "Configuración de Pasarela de Pago",
-        "inventoryManagement": "Gestión de Inventario",
-        "shoppingCart": "Configuración de Carrito de Compras",
-        "advancedAnalytics": "Analíticas Avanzadas",
-        "salesDashboard": "Panel de Ventas",
-        "pages": "Hasta 8 Páginas"
-      }
-    },
     "brandDesign": {
-      "title": "Diseño de Marca",
-      "price": "$3,500 MXN",
       "description": "Ideal para iniciar tu marca o startup",
       "features": {
+        "brandApplications": "Aplicaciones de marca",
+        "colorPalette": "Paleta de Color",
+        "finalFiles": "Archivos finales en PNG, SVG y PDF",
         "logoDesign": "Diseño de Logo",
-        "colorPalette": "Selección de Paleta de Colores",
-        "typography": "Guía de Tipografía",
-        "styleGuide": "Guía Básica de Estilo de Marca",
         "revisions": "Dos Revisiones de Diseño",
-        "finalFiles": "Archivos finales en múltiples formatos (PNG, SVG, PDF, AI)"
-      }
-    }
+        "styleGuide": "Guía de Estilo de Marca",
+        "typography": "Guía de Tipografía"
+      },
+      "price": "$9,000 MXN",
+      "title": "Diseño de Marca"
+    },
+    "ecommerce": {
+      "description": "Solución robusta para tu tienda en línea",
+      "features": {
+        "advancedAnalytics": "Analíticas Avanzadas",
+        "customDesign": "Diseño Personalizado",
+        "inventoryManagement": "Gestión de Inventario",
+        "pages": "Hasta 8 Páginas",
+        "paymentGateway": "Pasarela de Pago en Checkout",
+        "salesDashboard": "Panel de Ventas",
+        "shoppingCart": "Carrito de Compras"
+      },
+      "price": "$45,000 MXN",
+      "title": "Comercio Electrónico"
+    },
+    "form": {
+      "budget": "Rango de presupuesto",
+      "budgetOptions": {
+        "high": "$25,000+ MXN",
+        "low": "Hasta $10,000 MXN",
+        "mid": "$10,000 – $25,000 MXN"
+      },
+      "cancel": "Cancelar",
+      "close": "Cerrar",
+      "company": "Empresa",
+      "done": "Listo",
+      "email": "Correo",
+      "error": "Algo salió mal. Inténtalo de nuevo.",
+      "errorMessage": "Algo salió mal. Inténtalo de nuevo.",
+      "errorTitle": "Error al enviar",
+      "message": "Resumen del proyecto",
+      "name": "Nombre completo",
+      "required": "Obligatorio",
+      "select": "Seleccionar",
+      "sending": "Enviando...",
+      "submit": "Enviar solicitud",
+      "subtitle": "Comparte algunos detalles y te responderemos con los siguientes pasos.",
+      "successMessage": "Gracias por escribirnos. Te responderemos pronto.",
+      "successTitle": "Solicitud enviada",
+      "timeline": "Tiempo estimado",
+      "timelineOptions": {
+        "asap": "Lo antes posible",
+        "flexible": "Flexible",
+        "soon": "2–4 semanas"
+      },
+      "title": "Cuéntanos sobre tu proyecto",
+      "titleWithService": "Solicitud para {{service}}",
+      "website": "Sitio web (opcional)"
+    },
+    "from": "desde",
+    "landingPage": {
+      "description": "Diseñada para generar conversiones y captar leads",
+      "features": {
+        "advancedAnalytics": "Analíticas Avanzadas",
+        "ctaBanners": "Banners CTA",
+        "customDesign": "Diseño Personalizado",
+        "emailIntegration": "Integración con Email Marketing",
+        "leadForms": "Formularios de Captura de Leads",
+        "pages": "Hasta 4 Páginas",
+        "seoOptimized": "Optimización SEO"
+      },
+      "price": "$15,000 MXN",
+      "title": "Página de Destino"
+    },
+    "singlePage": {
+      "description": "Perfecto para proyectos personales o portafolios",
+      "features": {
+        "basicAnalytics": "Analíticas Básicas",
+        "ctaBanners": "Banners CTA",
+        "fastLoading": "Velocidad de Carga Rápida",
+        "pages": "1 Página",
+        "responsiveDesign": "Diseño Responsivo",
+        "seoOptimized": "Optimización SEO",
+        "sslCertificate": "Certificado SSL"
+      },
+      "price": "$8,000 MXN",
+      "title": "Página Única"
+    },
+    "subtitleShort": "Paquetes claros y flexibles para cada etapa — desde lanzamientos rápidos hasta plataformas completas.",
+    "titleFull": "Planes de precios"
   },
   "pricingCard": {
     "button": "Comenzar"
   },
-  "projectsView": {
-    "title": "Nuestro Trabajo en",
-    "action": "acción",
-    "subtitle": {
-      "start": "Explora nuestro portafolio de proyectos, mostrando",
-      "innovative": "innovadoras",
-      "middle": "soluciones e",
-      "impactful": "impactantes",
-      "end": "resultados creados para nuestros clientes."
+  "process": {
+    "description": {
+      "end": "con planificación, diseño, desarrollo y soporte personalizados para hacer realidad tu visión",
+      "important1": "la idea hasta el lanzamiento,",
+      "important2": "proceso fluido",
+      "important3": "en la vida.",
+      "middle": "asegurando un",
+      "start": "Te guiamos desde"
     },
-    "callToAction": {
-      "title": {
-        "start": "¿Listo para dar tu",
-        "highlight": "primer paso",
-        "end": "y alcanzar tu potencial digital?"
-      },
-      "subtitle": "Agenda una llamada de 30 minutos para obtener retroalimentación y un presupuesto de nuestro equipo de expertos.",
-      "button": "Agenda una llamada"
+    "titleFull": "Cómo funciona el proceso"
+  },
+  "processSwiper": {
+    "design": {
+      "description": "1-2 semanas para crear maquetas de alta fidelidad y alinear el diseño.",
+      "title": "Diseño"
+    },
+    "development": {
+      "description": "Fase de desarrollo, que puede durar de 1 semana a varios meses, para construir y probar tu aplicación.",
+      "title": "Desarrollo"
+    },
+    "discovering": {
+      "description": "Fase de 1 semana para asegurar el ajuste del proyecto con alineación técnica, presupuestaria y de tiempos.",
+      "title": "Descubrimiento"
+    },
+    "review": {
+      "description": "Fase de 1 mes para revisar y garantizar que el producto final cumpla con tus expectativas.",
+      "title": "Revisión"
+    },
+    "scoping": {
+      "description": "2-3 semanas para detallar requisitos, presupuesto y cronograma para tu aplicación.",
+      "title": "Definición"
+    },
+    "support": {
+      "description": "Soporte continuo o único para mejorar continuamente tu aplicación después del lanzamiento.",
+      "title": "Soporte"
     }
   },
   "projects": {
-    "reptilario": {
-      "title": "Reptilario y Ajolotario Quetzal",
-      "description": "Sitio de Refugio de Axolotes"
-    },
-    "greek": {
-      "title": "Greek",
-      "description": "Sitio de DJ"
-    },
-    "neuralFactory": {
-      "title": "Neural Factory",
-      "description": "Sitio de Big Data"
-    },
-    "xianna": {
-      "title": "Xianna",
-      "description": "Blog de Moda"
-    },
-    "orzaTech": {
-      "title": "Orza Tech",
-      "description": "Sitio de Startup"
-    },
-    "psiqueSer": {
-      "title": "Psique & Ser",
-      "description": "Sitio Empresarial"
-    },
     "cmc": {
-      "title": "Contadores Martínez Carreño y Asociados",
-      "description": "Página Única"
-    },
-    "fratellis": {
-      "title": "Fratelli's Helados",
-      "description": "Página de Aterrizaje"
-    },
-    "hilitosLili": {
-      "title": "Hilitos Lili",
-      "description": "Sitio Empresarial"
-    },
-    "mgsi": {
-      "title": "MG Servicio Inmobiliario",
-      "description": "Página Única"
-    },
-    "rondoProductions": {
-      "title": "Rondo Productions",
-      "description": "Portafolio y Servicios"
-    },
-    "salomonPhoto": {
-      "title": "Salomon Photo",
-      "description": "Sitio para Fotógrafos"
-    },
-    "faroSur": {
-      "title": "Faro Sur",
-      "description": "Sitio de Fabricante de Ropa"
+      "description": "Página Única",
+      "title": "Contadores Martínez Carreño y Asociados"
     },
     "colegioSucre": {
-      "title": "Colegio Antonio José de Sucre",
-      "description": "Sitio Educativo"
-    },
-    "asesorista": {
-      "title": "Asesorista",
-      "description": "Sitio de Bienes Raíces"
-    },
-    "skinSecrets": {
-      "title": "Skin Secrets",
-      "description": "Sitio de Spa y Cuidado de la Piel"
-    }
-  },
-  "testimonials": {
-    "orza": {
-      "quote": "Nuestro sitio web comercial ahora es más rápido, más receptivo y está bellamente diseñado. El equipo capturó perfectamente nuestra visión y entregó una experiencia de usuario impecable.",
-      "name": "Andrés I.",
-      "designation": "CEO en Orza Tech"
+      "description": "Sitio Educativo",
+      "title": "Colegio Antonio José de Sucre"
     },
     "fratellis": {
-      "quote": "La plataforma de comercio electrónico construida para nosotros ha llevado nuestras ventas al siguiente nivel. El diseño intuitivo y las mejoras de rendimiento superaron todas las expectativas.",
+      "description": "Página de Aterrizaje",
+      "title": "Fratelli's Helados"
+    },
+    "mgsi": {
+      "description": "Página Única",
+      "title": "MG Servicio Inmobiliario"
+    },
+    "psiqueSer": {
+      "description": "Sitio Empresarial",
+      "title": "Psique & Ser"
+    },
+    "xianna": {
+      "description": "Blog de Moda",
+      "title": "Xianna"
+    }
+  },
+  "projectsView": {
+    "subtitleShort": "Una selección enfocada de proyectos en distintas industrias, construidos con claridad e impacto.",
+    "titleShort": "Proyectos seleccionados",
+    "viewProject": "Ver proyecto"
+  },
+  "services": {
+    "items": {
+      "ai": {
+        "description": "Apps y herramientas con IA para resolver retos específicos de cada industria.",
+        "title": "IA y productos Amoxtli"
+      },
+      "brand": {
+        "description": "Diseño de logo, sistema de marca, mockups y UI kits para comunicar confianza.",
+        "title": "Branding y sistemas visuales"
+      },
+      "consulting": {
+        "description": "Acompañamos a equipos para digitalizar procesos y adoptar flujos de software.",
+        "title": "Consultoría de transformación digital"
+      },
+      "marketing": {
+        "description": "SEO, Google Analytics, Google Business y medición para crecer con datos.",
+        "title": "Marketing digital y analítica"
+      },
+      "software": {
+        "description": "Software a la medida, apps móviles y plataformas SaaS diseñadas para necesidades reales.",
+        "title": "Software, apps y SaaS"
+      },
+      "web": {
+        "description": "Sitios modernos, rápidos y confiables con UX clara, rendimiento y conversión.",
+        "title": "Diseño y desarrollo web"
+      }
+    },
+    "subtitle": "Desde software hasta branding y crecimiento, creamos las herramientas que impulsan tu negocio en cualquier industria.",
+    "title": "Aliados digitales de principio a fin."
+  },
+  "testimonials": {
+    "fratellis": {
+      "designation": "Propietaria en Fratelli's Helados",
       "name": "Laura O.",
-      "designation": "Propietaria en Fratelli's Helados"
+      "quote": "La plataforma de comercio electrónico construida para nosotros ha llevado nuestras ventas al siguiente nivel. El diseño intuitivo y las mejoras de rendimiento superaron todas las expectativas."
+    },
+    "orza": {
+      "designation": "CEO en Orza Tech",
+      "name": "Andrés I.",
+      "quote": "Nuestro sitio web comercial ahora es más rápido, más receptivo y está bellamente diseñado. El equipo capturó perfectamente nuestra visión y entregó una experiencia de usuario impecable."
     },
     "rondo": {
-      "quote": "El sitio de portafolio creado para nosotros es impresionante y funcional. Muestra perfectamente nuestro trabajo y nos ha ayudado a ganar más clientes. ¡Un trabajo realmente sobresaliente!",
+      "designation": "Director Creativo en Rondo Productions",
       "name": "Omar D.",
-      "designation": "Director Creativo en Rondo Productions"
+      "quote": "El sitio de portafolio creado para nosotros es impresionante y funcional. Muestra perfectamente nuestro trabajo y nos ha ayudado a ganar más clientes. ¡Un trabajo realmente sobresaliente!"
     },
+    "subtitle": "Historias reales de equipos que confiaron en nuestro trabajo.",
     "sucre": {
-      "quote": "Nuestro sitio educativo ahora es un centro para el aprendizaje interactivo y de fácil acceso para los padres. La atención al detalle y la creatividad del equipo marcaron toda la diferencia.",
+      "designation": "Directora en Colegio Antonio José de Sucre",
       "name": "Patricia A.",
-      "designation": "Directora en Colegio Antonio José de Sucre"
-    }
-  },
-  "footer": {
-    "links": {
-      "axoStore": "Tienda Axo",
-      "helpAxolotls": "Ayuda a los Ajolotes",
-      "visitSanctuary": "Visita el Santuario Axo"
+      "quote": "Nuestro sitio educativo ahora es un centro para el aprendizaje interactivo y de fácil acceso para los padres. La atención al detalle y la creatividad del equipo marcaron toda la diferencia."
     },
-    "social": {
-      "instagram": "Instagram",
-      "facebook": "Facebook",
-      "linkedin": "LinkedIn"
-    },
-    "contact": "contact@amoxtli.tech"
-  },
-  "store": {
-    "title": {
-      "part1": "¿Qué es",
-      "part2": "AWD Store?"
-    },
-    "supports": {
-      "awdStore": "AWD Store",
-      "text1": "apoya al",
-      "quetzal": "Reptilario y Ajolotario Quetzal",
-      "text2": "donando un porcentaje de las ventas de",
-      "axomerch": "Axomerch",
-      "text3": "para cubrir los costos de operación, alimentación y cuidado de los ajolotes. Cada compra ayuda a proteger esta especie única y a mantener sus esfuerzos de",
-      "conservation": "conservación"
-    },
-    "products": {
-      "hoodie": {
-        "title": "Sudadera AXO",
-        "price": "Próximamente disponible"
-      },
-      "cap": {
-        "title": "Gorra AXO",
-        "price": "Próximamente disponible"
-      },
-      "tshirt": {
-        "title": "Camiseta AXO",
-        "price": "Próximamente disponible"
-      }
-    }
+    "title": "Lo que dicen nuestros clientes"
   }
 }

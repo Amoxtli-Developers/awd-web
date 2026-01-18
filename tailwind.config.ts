@@ -11,9 +11,15 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "rgb(var(--color-primary) / <alpha-value>)",
+        secondary: "rgb(var(--color-secondary) / <alpha-value>)",
+        ink: "rgb(var(--color-ink) / <alpha-value>)",
+        paper: "rgb(var(--color-paper) / <alpha-value>)",
+        muted: "rgb(var(--color-muted) / <alpha-value>)",
+        line: "rgb(var(--color-line) / <alpha-value>)",
       },
       fontFamily: {
-        sans: ["var(--font-quicksand)", "Arial", "Helvetica", "sans-serif"],
+        sans: ["var(--font-space-grotesk)", "Space Grotesk", "Arial", "Helvetica", "sans-serif"],
       },
     },
   },

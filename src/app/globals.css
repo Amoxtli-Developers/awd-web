@@ -3,35 +3,55 @@
 @tailwind utilities;
 
 :root {
-  --background: #fbfbfb;
-  --foreground: #101010;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #fbfbfb;
-    --foreground: #101010;
-  }
+  --color-primary: 250 31 111;
+  --color-secondary: 255 173 211;
+  --color-ink: 26 26 26;
+  --color-paper: 251 251 251;
+  --color-muted: 107 107 107;
+  --color-line: 231 227 225;
+  --background: rgb(var(--color-paper));
+  --foreground: rgb(var(--color-ink));
 }
 
 
 body {
   color: var(--foreground) !important;
   background: var(--background) !important;
-  font-family: var(--font-quicksand), Arial, Helvetica, sans-serif;
+  font-family: var(--font-space-grotesk), "Space Grotesk", Arial, Helvetica, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 72px;
 }
 
-/* Custom Swiper Navigation Arrows */
-.swiper-button-next,
-.swiper-button-prev {
-  color: #101010  !important; /* Change arrow color */
+body {
+  scroll-snap-type: y mandatory;
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  color: #555555 !important; /* Optional: Add hover effect */
+.snap-container {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.snap-section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  position: relative;
+  z-index: 0;
+}
+
+.snap-center-section {
+  display: flex;
+  align-items: center;
+}
+
+.snap-center-section > div {
+  width: 100%;
+}
+
+* {
+  text-rendering: optimizeLegibility;
 }
