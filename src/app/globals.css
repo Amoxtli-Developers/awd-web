@@ -52,6 +52,18 @@ body {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .snap-container {
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+  }
+
+  .snap-section {
+    scroll-snap-align: center;
+    scroll-snap-stop: normal;
+  }
+}
+
 * {
   text-rendering: optimizeLegibility;
 }

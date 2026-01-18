@@ -155,6 +155,7 @@
       "title": "Comercio Electrónico"
     },
     "form": {
+      "back": "Atrás",
       "budget": "Rango de presupuesto",
       "budgetOptions": {
         "high": "$25,000+ MXN",
@@ -170,6 +171,7 @@
       "errorMessage": "Algo salió mal. Inténtalo de nuevo.",
       "errorTitle": "Error al enviar",
       "message": "Resumen del proyecto",
+      "next": "Siguiente",
       "name": "Nombre completo",
       "required": "Obligatorio",
       "select": "Seleccionar",
