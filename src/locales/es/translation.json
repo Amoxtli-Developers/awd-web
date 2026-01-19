@@ -78,6 +78,20 @@
     "subheading": "amox·tli /ˈaːmoʃt͡ɬi/ nāhuatl: códice",
     "title": "Somos"
   },
+  "initiatives": {
+    "title": "Programas de educación y partnership",
+    "subtitle": "Conoce las iniciativas que amplían cómo los equipos aprenden, colaboran y escalan con Amoxtli.",
+    "partners": {
+      "title": "Programa Amoxtli Partners",
+      "description": "Programa para aliados estratégicos que quieran llevar nuestras soluciones a más empresas, con beneficios exclusivos y apoyo comercial en proyectos de desarrollo, implementación y consultoría.",
+      "cta": "Conoce más"
+    },
+    "school": {
+      "title": "Amoxtli School",
+      "description": "Iniciativa de formación y consultoría en tecnología e IA para adoptar automatización y analítica avanzada con capacitación práctica y acompañamiento experto.",
+      "cta": "Solicita información"
+    }
+  },
   "meta": {
     "title": "Amoxtli | Software, Branding y Sistemas Digitales con Propósito",
     "description": "Amoxtli es un estudio digital en México que crea software a la medida, apps, SaaS, sitios web, sistemas de marca y flujos con IA para startups y equipos en crecimiento.",
@@ -289,8 +303,8 @@
     }
   },
   "projectsView": {
-    "subtitleShort": "Una selección enfocada de proyectos en distintas industrias, construidos con claridad e impacto.",
-    "titleShort": "Proyectos seleccionados",
+    "subtitleShort": "Un vistazo a nuestro trabajo en distintas industrias — cada proyecto importa y se construye con cuidado.",
+    "titleShort": "Proyectos y colaboraciones",
     "viewProject": "Ver proyecto"
   },
   "services": {

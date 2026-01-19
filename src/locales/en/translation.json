@@ -78,6 +78,20 @@
     "subheading": "amox·tli /ˈaːmoʃt͡ɬi/ nāhuatl: codex",
     "title": "We are"
   },
+  "initiatives": {
+    "title": "Education & partnership programs",
+    "subtitle": "Explore the initiatives that expand how teams learn, collaborate, and scale with Amoxtli.",
+    "partners": {
+      "title": "Amoxtli Partners Program",
+      "description": "Become an Amoxtli partner and bring our technology solutions to more businesses. Gain exclusive benefits and collaborate on forward-looking projects.",
+      "cta": "Learn More"
+    },
+    "school": {
+      "title": "Amoxtli School",
+      "description": "Training and consulting in technology and AI to transform your processes. Responsible adoption, automation, and analytics to optimize workflows and teams.",
+      "cta": "Request Information"
+    }
+  },
   "meta": {
     "title": "Amoxtli | Software, Branding & Digital Systems with Purpose",
     "description": "Amoxtli is a Mexico-based digital studio building custom software, apps, SaaS, websites, branding systems, and AI-ready workflows for startups and growing teams.",
@@ -289,8 +303,8 @@
     }
   },
   "projectsView": {
-    "subtitleShort": "A focused set of builds across industries, crafted with clarity and measurable impact.",
-    "titleShort": "Selected projects",
+    "subtitleShort": "A snapshot of work across industries — every project matters, and each one is built with care.",
+    "titleShort": "Projects & collaborations",
     "viewProject": "View project"
   },
   "services": {

@@ -6,6 +6,7 @@ import i18n from "../../src/i18n";
 import SiteNav from "@components/sections/SiteNav";
 import HeroSection from "@components/sections/HeroSection";
 import ServicesSection from "@components/sections/ServicesSection";
+import InitiativesSection from "@components/sections/InitiativesSection";
 import AboutSection from "@components/sections/AboutSection";
 import ProcessSection from "@components/sections/ProcessSection";
 import ProjectsSection from "@components/sections/ProjectsSection";
@@ -48,6 +49,7 @@ const Home = () => {
               <ProjectsSection />
               <PricingSection />
               <TestimonialsSection />
+              <InitiativesSection />
             </main>
             <SiteFooter />
             <CookieBanner />
