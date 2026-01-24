@@ -6,11 +6,16 @@ import { useLanguage } from "./useLanguage";
 interface LanguageToggleProps {
   compact?: boolean;
   inverse?: boolean;
+  onLanguageChange: (lang: "en" | "es") => void;
 }
 
-const LanguageToggle = ({ compact = false, inverse = false }: LanguageToggleProps) => {
+const LanguageToggle = ({
+  compact = false,
+  inverse = false,
+  onLanguageChange,
+}: LanguageToggleProps) => {
   const { t } = useTranslation();
-  const { language, setLanguage } = useLanguage();
+  const { language } = useLanguage();
 
   const baseBg = inverse ? "bg-transparent border-paper/40" : "bg-paper border-line";
   const activeBg = inverse ? "bg-paper text-ink" : "bg-primary text-paper";
@@ -25,7 +30,7 @@ const LanguageToggle = ({ compact = false, inverse = false }: LanguageToggleProp
     >
       <button
         type="button"
-        onClick={() => setLanguage("en")}
+        onClick={() => onLanguageChange("en")}
         className={`min-h-[36px] min-w-[44px] rounded-full px-3 transition-colors ${
           language === "en"
             ? activeBg
@@ -37,7 +42,7 @@ const LanguageToggle = ({ compact = false, inverse = false }: LanguageToggleProp
       </button>
       <button
         type="button"
-        onClick={() => setLanguage("es")}
+        onClick={() => onLanguageChange("es")}
         className={`min-h-[36px] min-w-[44px] rounded-full px-3 transition-colors ${
           language === "es"
             ? activeBg

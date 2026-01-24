@@ -24,7 +24,7 @@
     "logoAlt": "Amoxtli logo"
   },
   "contact": {
-    "note": "We work with startups, founders, and small teams who care about craft.",
+    "note": "We partner with founders and teams of all sizes who care about craft and purpose.",
     "primaryCta": "Book a call",
     "subtitle": "Tell us about your idea and we will respond with clarity, timelines, and next steps.",
     "title": "Build with purpose."
@@ -72,7 +72,7 @@
   },
   "hero": {
     "backgroundAlt": "Background image",
-    "description": "A software development startup founded in Mexico by a group of passionate engineers seeking to help startups and small businesses succeed in the digital world.",
+    "description": "A design and development studio crafting purpose-built technology for businesses that want to make an impact in the digital world.",
     "primaryCta": "Book a call",
     "secondaryCta": "View projects",
     "subheading": "amox·tli /ˈaːmoʃt͡ɬi/ nāhuatl: codex",
@@ -114,7 +114,7 @@
       "digital transformation",
       "AI workflows",
       "business automation",
-      "startup development studio",
+      "digital technology studio",
       "Mexico City tech studio",
       "Next.js development",
       "React development",
@@ -130,16 +130,16 @@
     "languageLabel": "Language selector",
     "openMenu": "Open menu"
   },
-  "navbar": {
-    "bookCall": "Book a call",
-    "meetAWD": "Meet AWD",
-    "pricing": "Pricing",
-    "process": "Process",
-    "projects": "Projects",
-    "services": "Services",
-    "testimonials": "Testimonials"
-  },
-  "pricing": {
+      "navbar": {
+        "bookCall": "Book a call",
+        "meetAWD": "Meet AWD",
+        "initiatives": "Programs",
+        "pricing": "Pricing",
+        "process": "Process",
+        "projects": "Projects",
+        "services": "Services",
+        "testimonials": "Testimonials"
+      },  "pricing": {
     "brandDesign": {
       "description": "Ideal for starting your brand or startup",
       "features": {

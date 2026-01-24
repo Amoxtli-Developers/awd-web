@@ -8,7 +8,11 @@ import styles from "./sections.module.css";
 import logoMain from "@assets/logo/main.svg";
 import logoWhite from "@assets/logo/white.svg";
 
-const SiteNav = () => {
+const SiteNav = ({
+  onLanguageChange,
+}: {
+  onLanguageChange: (lang: "en" | "es") => void;
+}) => {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const [panelOpen, setPanelOpen] = useState(false);
@@ -23,6 +27,7 @@ const SiteNav = () => {
       { href: "#projects", label: t("navbar.projects") },
       { href: "#pricing", label: t("navbar.pricing") },
       { href: "#testimonials", label: t("navbar.testimonials") },
+      { href: "#initiatives", label: t("navbar.initiatives") },
     ],
     [t]
   );
@@ -140,7 +145,11 @@ const SiteNav = () => {
               </a>
             ))}
           </div>
-          <LanguageToggle compact inverse={!isScrolled} />
+          <LanguageToggle
+            compact
+            inverse={!isScrolled}
+            onLanguageChange={onLanguageChange}
+          />
           <button
             type="button"
             onClick={() => {
@@ -155,7 +164,11 @@ const SiteNav = () => {
         </div>
 
         <div className="flex items-center gap-3 lg:hidden">
-          <LanguageToggle compact inverse={!isScrolled} />
+          <LanguageToggle
+            compact
+            inverse={!isScrolled}
+            onLanguageChange={onLanguageChange}
+          />
           <button
             type="button"
             className={`flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full border ${

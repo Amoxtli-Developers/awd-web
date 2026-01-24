@@ -24,7 +24,7 @@
     "logoAlt": "Logotipo de Amoxtli"
   },
   "contact": {
-    "note": "Trabajamos con startups, fundadores y equipos pequeños que cuidan el detalle.",
+    "note": "Colaboramos con fundadores y equipos de todos los tamaños que valoran el detalle y el propósito.",
     "primaryCta": "Agenda una llamada",
     "subtitle": "Cuéntanos tu idea y te responderemos con claridad, tiempos y próximos pasos.",
     "title": "Construye con propósito."
@@ -72,7 +72,7 @@
   },
   "hero": {
     "backgroundAlt": "Imagen de fondo",
-    "description": "Una startup de desarrollo de software fundada en México por un grupo de ingenieros apasionados que buscan ayudar a startups y pequeñas empresas a tener éxito en el mundo digital.",
+    "description": "Un estudio de diseño y desarrollo que crea tecnología con propósito para empresas que buscan generar un impacto en el mundo digital.",
     "primaryCta": "Agenda una llamada",
     "secondaryCta": "Ver proyectos",
     "subheading": "amox·tli /ˈaːmoʃt͡ɬi/ nāhuatl: códice",
@@ -114,7 +114,7 @@
       "transformación digital",
       "flujos con IA",
       "automatización",
-      "estudio digital para startups",
+      "estudio tecnológico digital",
       "CDMX tecnología",
       "Next.js",
       "React",
@@ -130,16 +130,16 @@
     "languageLabel": "Selector de idioma",
     "openMenu": "Abrir menú"
   },
-  "navbar": {
-    "bookCall": "Agenda una llamada",
-    "meetAWD": "Conoce AWD",
-    "pricing": "Precios",
-    "process": "Proceso",
-    "projects": "Proyectos",
-    "services": "Servicios",
-    "testimonials": "Testimonios"
-  },
-  "pricing": {
+      "navbar": {
+        "bookCall": "Agenda una llamada",
+        "meetAWD": "Conoce AWD",
+        "initiatives": "Programas",
+        "pricing": "Precios",
+        "process": "Proceso",
+        "projects": "Proyectos",
+        "services": "Servicios",
+        "testimonials": "Testimonios"
+      },  "pricing": {
     "brandDesign": {
       "description": "Ideal para iniciar tu marca o startup",
       "features": {

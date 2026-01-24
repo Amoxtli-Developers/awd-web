@@ -7,7 +7,11 @@ import { ArrowUp } from "lucide-react";
 import LanguageToggle from "./LanguageToggle";
 import logoMark from "@assets/logo/main.svg";
 
-const SiteFooter = () => {
+const SiteFooter = ({
+  onLanguageChange,
+}: {
+  onLanguageChange: (lang: "en" | "es") => void;
+}) => {
   const { t } = useTranslation();
   const footerRef = useRef<HTMLDivElement | null>(null);
   const [showTop, setShowTop] = useState(false);
@@ -61,7 +65,7 @@ const SiteFooter = () => {
                 height={20}
                 className="h-5 w-auto"
               />
-              <LanguageToggle compact />
+              <LanguageToggle compact onLanguageChange={onLanguageChange} />
             </div>
 
             <div className="grid grid-cols-2 gap-6 text-sm">
