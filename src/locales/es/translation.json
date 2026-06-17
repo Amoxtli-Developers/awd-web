@@ -93,15 +93,22 @@
     }
   },
   "meta": {
-    "title": "Amoxtli | Software, Branding y Sistemas Digitales con Propósito",
-    "description": "Amoxtli es un estudio digital en México que crea software a la medida, apps, SaaS, sitios web, sistemas de marca y flujos con IA para startups y equipos en crecimiento.",
-    "ogTitle": "Amoxtli | Software, Branding y Sistemas Digitales con Propósito",
-    "ogDescription": "Software a la medida, apps, SaaS, web, branding y sistemas con IA para que startups y equipos avancen con claridad y velocidad.",
+    "title": "Amoxtli® | Studio de Software, Branding y Sistemas Digitales | México",
+    "description": "Amoxtli es el studio tech en México que construye software a medida, apps, SaaS, sitios web y sistemas de marca para startups y equipos que quieren crecer con propósito.",
+    "ogTitle": "Amoxtli® | Studio Tech en México",
+    "ogDescription": "Software a medida, apps, SaaS, web y branding con propósito — construido por Amoxtli, studio digital en México.",
     "ogAlt": "Amoxtli — software, branding y sistemas digitales",
-    "twitterTitle": "Amoxtli | Software, Branding y Sistemas Digitales",
-    "twitterDescription": "Estudio en México que construye software, apps, SaaS, sitios web, branding y flujos con IA para startups y equipos.",
+    "twitterTitle": "Amoxtli® | Studio Tech en México",
+    "twitterDescription": "Amoxtli es el studio tech en México que construye software, apps, SaaS, sitios web y sistemas de marca con propósito.",
     "keywords": [
       "Amoxtli",
+      "Amoxtli tech",
+      "Amoxtli México",
+      "Amoxtli studio",
+      "amoxtli.tech",
+      "AWD Amoxtli",
+      "Amoxtli Web Developers",
+      "Amoxtli software",
       "desarrollo de software México",
       "software a la medida",
       "desarrollo web",
@@ -120,7 +127,9 @@
       "React",
       "diseño y desarrollo web",
       "branding en México",
-      "analítica y SEO"
+      "analítica y SEO",
+      "studio digital México",
+      "agencia de software México"
     ]
   },
   "nav": {
