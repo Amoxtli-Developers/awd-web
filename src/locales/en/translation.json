@@ -25,7 +25,7 @@
   },
   "contact": {
     "note": "We partner with founders and teams of all sizes who care about craft and purpose.",
-    "primaryCta": "Book a call",
+    "primaryCta": "Let's talk about your project",
     "subtitle": "Tell us about your idea and we will respond with clarity, timelines, and next steps.",
     "title": "Build with purpose."
   },
@@ -73,7 +73,7 @@
   "hero": {
     "backgroundAlt": "Background image",
     "description": "A design and development studio crafting purpose-built technology for businesses that want to make an impact in the digital world.",
-    "primaryCta": "Book a call",
+    "primaryCta": "Let's talk about your project",
     "secondaryCta": "View projects",
     "subheading": "amox·tli /ˈaːmoʃt͡ɬi/ nāhuatl: codex",
     "title": "We are"
@@ -131,7 +131,7 @@
     "openMenu": "Open menu"
   },
       "navbar": {
-        "bookCall": "Book a call",
+        "bookCall": "Let's talk about your project",
         "meetAWD": "Meet AWD",
         "initiatives": "Programs",
         "pricing": "Pricing",
@@ -360,5 +360,10 @@
       "quote": "Our educational site is now a hub for interactive learning and easy access for parents. The team's attention to detail and creativity made all the difference."
     },
     "title": "What our clients say"
+  },
+  "whatsapp": {
+    "modalTitle": "Let's talk about your project",
+    "modalSubtitle": "Scan the code with your phone to open WhatsApp",
+    "openLink": "Or open WhatsApp from here"
   }
 }
