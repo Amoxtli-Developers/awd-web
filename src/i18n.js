@@ -5,9 +5,10 @@ import translationEN from "./locales/en/translation.json";
 import translationES from "./locales/es/translation.json";
 
 const getInitialLanguage = () => {
-  if (typeof window === "undefined") return "en";
-  const stored = window.localStorage.getItem("amoxtli-language");
-  return stored || "en";
+  if (typeof window === "undefined") return "es";
+  const stored = window.localStorage.getItem("amoxtli-lang");
+  if (stored) return stored;
+  return "es";
 };
 
 i18n.use(initReactI18next).init({
@@ -16,7 +17,7 @@ i18n.use(initReactI18next).init({
     es: { translation: translationES },
   },
   lng: getInitialLanguage(),
-  fallbackLng: "en",
+  fallbackLng: "es",
   supportedLngs: ["en", "es"],
   interpolation: {
     escapeValue: false,

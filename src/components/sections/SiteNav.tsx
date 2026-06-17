@@ -7,6 +7,8 @@ import LanguageToggle from "./LanguageToggle";
 import styles from "./sections.module.css";
 import logoMain from "@assets/logo/main.svg";
 import logoWhite from "@assets/logo/white.svg";
+import { useWhatsAppCTA } from "./useWhatsAppCTA";
+import WhatsAppModal from "./WhatsAppModal";
 
 const SiteNav = ({
   onLanguageChange,
@@ -14,6 +16,7 @@ const SiteNav = ({
   onLanguageChange: (lang: "en" | "es") => void;
 }) => {
   const { t } = useTranslation();
+  const { handleCTA, modalOpen, closeModal } = useWhatsAppCTA();
   const [open, setOpen] = useState(false);
   const [panelOpen, setPanelOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -152,9 +155,7 @@ const SiteNav = ({
           />
           <button
             type="button"
-            onClick={() => {
-              window.open("https://calendar.app.google/XSn3nbJqGQ1imCnJ8", "_blank", "noopener,noreferrer");
-            }}
+            onClick={handleCTA}
             className={`group min-h-[44px] rounded-full border px-5 py-2 text-sm font-semibold transition-colors ${ctaClass}`}
           >
             <span className={`${isScrolled ? "text-current" : "text-paper"} transition-colors ${!isScrolled ? "group-hover:mix-blend-difference" : ""}`}>
@@ -235,7 +236,7 @@ const SiteNav = ({
                 type="button"
                 onClick={() => {
                   setOpen(false);
-                  window.open("https://calendar.app.google/XSn3nbJqGQ1imCnJ8", "_blank", "noopener,noreferrer");
+                  handleCTA();
                 }}
                 className="min-h-[44px] rounded-full border border-paper px-5 py-2 text-center text-sm font-semibold text-paper transition-colors hover:bg-paper hover:text-primary"
               >
@@ -245,6 +246,7 @@ const SiteNav = ({
           </div>
         </dialog>
       </div>
+      <WhatsAppModal open={modalOpen} onClose={closeModal} />
     </header>
   );
 };

@@ -5,9 +5,12 @@ import { useTranslation } from "react-i18next";
 import FadeIn from "./FadeIn";
 import heroImage from "@assets/hero/hero.jpg";
 import logoWhite from "@assets/logo/white.svg";
+import { useWhatsAppCTA } from "./useWhatsAppCTA";
+import WhatsAppModal from "./WhatsAppModal";
 
 const HeroSection = () => {
   const { t } = useTranslation();
+  const { handleCTA, modalOpen, closeModal } = useWhatsAppCTA();
 
   return (
     <section
@@ -51,16 +54,15 @@ const HeroSection = () => {
           </FadeIn>
           <FadeIn delay={0.15}>
             <div className="mt-6 flex flex-wrap items-center justify-end gap-4">
-              <a
-                href="https://calendar.app.google/XSn3nbJqGQ1imCnJ8"
-                target="_blank"
-                rel="noreferrer"
+              <button
+                type="button"
+                onClick={handleCTA}
                 className="group min-h-[44px] rounded-full border border-paper px-6 py-3 text-sm font-semibold text-paper transition-colors hover:bg-paper"
               >
                 <span className="text-paper transition-colors group-hover:mix-blend-difference">
                   {t("hero.primaryCta")}
                 </span>
-              </a>
+              </button>
               <a
                 href="#projects"
                 className="min-h-[44px] rounded-full border border-paper/60 px-6 py-3 text-sm font-semibold text-paper transition-colors hover:border-paper hover:bg-paper/10"
@@ -71,6 +73,7 @@ const HeroSection = () => {
           </FadeIn>
         </div>
       </div>
+      <WhatsAppModal open={modalOpen} onClose={closeModal} />
     </section>
   );
 };

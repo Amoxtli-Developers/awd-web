@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
-const LANG_STORAGE_KEY = "amoxtli-language";
+const LANG_STORAGE_KEY = "amoxtli-lang";
 
 export const useLanguage = () => {
   const { i18n } = useTranslation();
@@ -18,7 +18,7 @@ export const useLanguage = () => {
 
   useEffect(() => {
     if (typeof document !== "undefined") {
-      document.documentElement.lang = i18n.language || "en";
+      document.documentElement.lang = i18n.language || "es";
     }
   }, [i18n.language]);
 
@@ -26,12 +26,12 @@ export const useLanguage = () => {
     i18n.changeLanguage(lang);
     if (typeof window !== "undefined") {
       window.localStorage.setItem(LANG_STORAGE_KEY, lang);
-      document.cookie = `amoxtli-language=${lang}; path=/; max-age=31536000`;
+      document.cookie = `amoxtli-lang=${lang}; path=/; max-age=31536000`;
     }
   };
 
   return {
-    language: (i18n.language || "en") as "en" | "es",
+    language: (i18n.language || "es") as "en" | "es",
     setLanguage,
   };
 };

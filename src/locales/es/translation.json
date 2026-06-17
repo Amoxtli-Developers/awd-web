@@ -1,32 +1,32 @@
 {
   "about": {
-    "focus": "Software a la medida, apps, SaaS, web y sistemas de marca con experiencias consistentes.",
+    "focus": "Software a medida, apps, SaaS, plataformas web y sistemas de marca que mantienen experiencias coherentes.",
     "focusTitle": "Enfoque",
-    "goals": "Ayudar a empresas a ser digitales y expandirse con herramientas impulsadas por IA.",
+    "goals": "Ayudar a los negocios a convertirse en empresas digitales y crecer con herramientas de IA que escalan contigo.",
     "goalsTitle": "Metas",
     "metrics": {
       "ai": "IA aplicada",
-      "automation": "Flujos listos para automatizar",
-      "industries": "Enfoque multi‑industria",
-      "products": "Productos Amoxtli para operaciones reales",
+      "automation": "Flujos listos para automatización",
+      "industries": "Enfoque multi-industria",
+      "products": "Productos AMOXTLI para operaciones reales",
       "projects": "20+ proyectos entregados",
       "tech": "Tecnología moderna"
     },
-    "missionShort": "Creamos tecnología con propósito.",
-    "objective": "Cada proyecto y producto se diseña para resolver problemas reales, elevar marcas y generar impacto medible.",
-    "objectives": "Crear tecnología que mejore flujos reales y genere resultados de negocio medibles.",
+    "missionShort": "Construimos tecnología con propósito.",
+    "objective": "Cada proyecto que construimos está diseñado para resolver problemas reales, fortalecer tu marca y generar resultados que puedas medir.",
+    "objectives": "Crear tecnología que mejore procesos reales y genere resultados concretos para tu negocio.",
     "objectivesTitle": "Objetivos",
     "teamAlt": "Equipo de Amoxtli",
-    "values": "Innovación con propósito, colaboración clara y ejecución sólida en cada industria que atendemos.",
+    "values": "Innovación con propósito, colaboración transparente y ejecución consistente en cada industria que acompañamos.",
     "valuesTitle": "Valores"
   },
   "brand": {
     "logoAlt": "Logotipo de Amoxtli"
   },
   "contact": {
-    "note": "Colaboramos con fundadores y equipos de todos los tamaños que valoran el detalle y el propósito.",
-    "primaryCta": "Agenda una llamada",
-    "subtitle": "Cuéntanos tu idea y te responderemos con claridad, tiempos y próximos pasos.",
+    "note": "Acompañamos a fundadores y equipos de todos los tamaños que se toman en serio lo que construyen.",
+    "primaryCta": "Hablemos de tu proyecto",
+    "subtitle": "Cuéntanos sobre tu idea y te respondemos con claridad, tiempos y los siguientes pasos.",
     "title": "Construye con propósito."
   },
   "cookies": {
@@ -57,8 +57,8 @@
     "contact": "hello@amoxtli.tech",
     "copyright": "© 2026 Amoxtli®",
     "links": {
-      "helpAxolotls": "Ayuda a los Ajolotes",
-      "visitSanctuary": "Conviértete en aliado"
+      "helpAxolotls": "Ayuda a los ajolotes",
+      "visitSanctuary": "Conviértete en partner"
     },
     "rights": "Todos los derechos reservados.",
     "sections": {
@@ -72,24 +72,24 @@
   },
   "hero": {
     "backgroundAlt": "Imagen de fondo",
-    "description": "Un estudio de diseño y desarrollo que crea tecnología con propósito para empresas que buscan generar un impacto en el mundo digital.",
-    "primaryCta": "Agenda una llamada",
+    "description": "Un studio tech con propósito. Construimos tecnología clara, estratégica y humana para negocios que quieren crecer sin perder su identidad.",
+    "primaryCta": "Hablemos de tu proyecto",
     "secondaryCta": "Ver proyectos",
     "subheading": "amox·tli /ˈaːmoʃt͡ɬi/ nāhuatl: códice",
     "title": "Somos"
   },
   "initiatives": {
-    "title": "Programas de educación y partnership",
-    "subtitle": "Conoce las iniciativas que amplían cómo los equipos aprenden, colaboran y escalan con Amoxtli.",
+    "title": "Programas educativos y de alianzas",
+    "subtitle": "Iniciativas que expanden cómo los equipos aprenden, colaboran y escalan con AMOXTLI.",
     "partners": {
-      "title": "Programa Amoxtli Partners",
-      "description": "Programa para aliados estratégicos que quieran llevar nuestras soluciones a más empresas, con beneficios exclusivos y apoyo comercial en proyectos de desarrollo, implementación y consultoría.",
-      "cta": "Conoce más"
+      "title": "Programa de Partners AMOXTLI",
+      "description": "Conviértete en partner de AMOXTLI y lleva nuestras soluciones tecnológicas a más negocios. Obtén beneficios exclusivos y colabora en proyectos con visión de futuro.",
+      "cta": "Saber más"
     },
     "school": {
-      "title": "Amoxtli School",
-      "description": "Iniciativa de formación y consultoría en tecnología e IA para adoptar automatización y analítica avanzada con capacitación práctica y acompañamiento experto.",
-      "cta": "Solicita información"
+      "title": "AMOXTLI School",
+      "description": "Capacitación y consultoría en tecnología e IA para transformar tus procesos. Adopción responsable, automatización y analítica para optimizar equipos y flujos de trabajo.",
+      "cta": "Solicitar información"
     }
   },
   "meta": {
@@ -130,43 +130,44 @@
     "languageLabel": "Selector de idioma",
     "openMenu": "Abrir menú"
   },
-      "navbar": {
-        "bookCall": "Agenda una llamada",
-        "meetAWD": "Conoce AWD",
-        "initiatives": "Programas",
-        "pricing": "Precios",
-        "process": "Proceso",
-        "projects": "Proyectos",
-        "services": "Servicios",
-        "testimonials": "Testimonios"
-      },  "pricing": {
+  "navbar": {
+    "bookCall": "Hablemos de tu proyecto",
+    "meetAWD": "Quiénes somos",
+    "initiatives": "Programas",
+    "pricing": "Precios",
+    "process": "Proceso",
+    "projects": "Proyectos",
+    "services": "Servicios",
+    "testimonials": "Testimonios"
+  },
+  "pricing": {
     "brandDesign": {
       "description": "Ideal para iniciar tu marca o startup",
       "features": {
         "brandApplications": "Aplicaciones de marca",
-        "colorPalette": "Paleta de Color",
+        "colorPalette": "Paleta de color",
         "finalFiles": "Archivos finales en PNG, SVG y PDF",
-        "logoDesign": "Diseño de Logo",
-        "revisions": "Dos Revisiones de Diseño",
-        "styleGuide": "Guía de Estilo de Marca",
-        "typography": "Guía de Tipografía"
+        "logoDesign": "Diseño de logotipo",
+        "revisions": "Dos revisiones de diseño",
+        "styleGuide": "Guía de estilo de marca",
+        "typography": "Lineamientos tipográficos"
       },
       "price": "$9,000 MXN",
-      "title": "Diseño de Marca"
+      "title": "Diseño de marca"
     },
     "ecommerce": {
       "description": "Solución robusta para tu tienda en línea",
       "features": {
-        "advancedAnalytics": "Analíticas Avanzadas",
-        "customDesign": "Diseño Personalizado",
-        "inventoryManagement": "Gestión de Inventario",
-        "pages": "Hasta 8 Páginas",
-        "paymentGateway": "Pasarela de Pago en Checkout",
-        "salesDashboard": "Panel de Ventas",
-        "shoppingCart": "Carrito de Compras"
+        "advancedAnalytics": "Analítica avanzada",
+        "customDesign": "Diseño personalizado",
+        "inventoryManagement": "Gestión de inventario",
+        "pages": "Hasta 8 páginas",
+        "paymentGateway": "Pasarela de pago",
+        "salesDashboard": "Dashboard de ventas",
+        "shoppingCart": "Configuración de carrito"
       },
       "price": "$45,000 MXN",
-      "title": "Comercio Electrónico"
+      "title": "E-commerce"
     },
     "form": {
       "back": "Atrás",
@@ -208,157 +209,162 @@
     "landingPage": {
       "description": "Diseñada para generar conversiones y captar leads",
       "features": {
-        "advancedAnalytics": "Analíticas Avanzadas",
+        "advancedAnalytics": "Analítica avanzada",
         "ctaBanners": "Banners CTA",
-        "customDesign": "Diseño Personalizado",
-        "emailIntegration": "Integración con Email Marketing",
-        "leadForms": "Formularios de Captura de Leads",
-        "pages": "Hasta 4 Páginas",
-        "seoOptimized": "Optimización SEO"
+        "customDesign": "Diseño personalizado",
+        "emailIntegration": "Integración con email marketing",
+        "leadForms": "Formularios de captación",
+        "pages": "Hasta 4 páginas",
+        "seoOptimized": "Optimizado para SEO"
       },
       "price": "$15,000 MXN",
-      "title": "Página de Destino"
+      "title": "Landing page"
     },
     "singlePage": {
-      "description": "Perfecto para proyectos personales o portafolios",
+      "description": "Ideal para proyectos personales o portafolios",
       "features": {
-        "basicAnalytics": "Analíticas Básicas",
+        "basicAnalytics": "Analítica básica",
         "ctaBanners": "Banners CTA",
-        "fastLoading": "Velocidad de Carga Rápida",
-        "pages": "1 Página",
-        "responsiveDesign": "Diseño Responsivo",
-        "seoOptimized": "Optimización SEO",
+        "fastLoading": "Carga rápida",
+        "pages": "1 página",
+        "responsiveDesign": "Diseño responsive",
+        "seoOptimized": "Optimizado para SEO",
         "sslCertificate": "Certificado SSL"
       },
       "price": "$8,000 MXN",
-      "title": "Página Única"
+      "title": "Página única"
     },
-    "subtitleShort": "Paquetes claros y flexibles para cada etapa — desde lanzamientos rápidos hasta plataformas completas.",
-    "titleFull": "Planes de precios"
+    "subtitleShort": "Opciones claras y flexibles para diferentes etapas de tu negocio, desde lanzamientos rápidos hasta plataformas completas.",
+    "titleFull": "Planes y precios"
   },
   "pricingCard": {
     "button": "Comenzar"
   },
   "process": {
     "description": {
-      "end": "con planificación, diseño, desarrollo y soporte personalizados para hacer realidad tu visión",
+      "end": "",
       "important1": "la idea hasta el lanzamiento,",
-      "important2": "proceso fluido",
-      "important3": "en la vida.",
-      "middle": "asegurando un",
-      "start": "Te guiamos desde"
+      "important2": "a tu medida.",
+      "important3": "",
+      "middle": "con planeación, diseño, desarrollo y soporte",
+      "start": "Te acompañamos desde"
     },
-    "titleFull": "Cómo funciona el proceso"
+    "titleFull": "Cómo trabajamos contigo"
   },
   "processSwiper": {
     "design": {
-      "description": "1-2 semanas para crear maquetas de alta fidelidad y alinear el diseño.",
+      "description": "De 1 a 2 semanas para crear mockups de alta fidelidad y afinar la experiencia visual contigo.",
       "title": "Diseño"
     },
     "development": {
-      "description": "Fase de desarrollo, que puede durar de 1 semana a varios meses, para construir y probar tu aplicación.",
+      "description": "La fase de construcción, desde 1 semana hasta varios meses dependiendo del alcance de tu proyecto.",
       "title": "Desarrollo"
     },
     "discovering": {
-      "description": "Fase de 1 semana para asegurar el ajuste del proyecto con alineación técnica, presupuestaria y de tiempos.",
-      "title": "Descubrimiento"
+      "description": "Una semana para entender tu proyecto, alinear presupuesto, tiempos y verificar que somos el partner correcto para ti.",
+      "title": "Exploración"
     },
     "review": {
-      "description": "Fase de 1 mes para revisar y garantizar que el producto final cumpla con tus expectativas.",
+      "description": "Un mes de revisión para asegurarnos de que el producto final cumple exactamente con lo que acordamos.",
       "title": "Revisión"
     },
     "scoping": {
-      "description": "2-3 semanas para detallar requisitos, presupuesto y cronograma para tu aplicación.",
+      "description": "De 2 a 3 semanas para detallar requerimientos, presupuesto y tiempos de tu solución.",
       "title": "Definición"
     },
     "support": {
-      "description": "Soporte continuo o único para mejorar continuamente tu aplicación después del lanzamiento.",
+      "description": "Acompañamiento continuo o puntual para seguir mejorando tu producto después del lanzamiento.",
       "title": "Soporte"
     }
   },
   "projects": {
     "cmc": {
-      "description": "Página Única",
+      "description": "Página única",
       "title": "Contadores Martínez Carreño y Asociados"
     },
     "colegioSucre": {
-      "description": "Sitio Educativo",
+      "description": "Sitio educativo",
       "title": "Colegio Antonio José de Sucre"
     },
     "fratellis": {
-      "description": "Página de Aterrizaje",
+      "description": "Landing page",
       "title": "Fratelli's Helados"
     },
     "mgsi": {
-      "description": "Página Única",
+      "description": "Página única",
       "title": "MG Servicio Inmobiliario"
     },
     "psiqueSer": {
-      "description": "Sitio Empresarial",
+      "description": "Sitio empresarial",
       "title": "Psique & Ser"
     },
     "xianna": {
-      "description": "Blog de Moda",
+      "description": "Blog de moda",
       "title": "Xianna"
     }
   },
   "projectsView": {
-    "subtitleShort": "Un vistazo a nuestro trabajo en distintas industrias — cada proyecto importa y se construye con cuidado.",
+    "subtitleShort": "Una muestra de trabajo en diferentes industrias. Cada proyecto importa, y cada uno se construye con cuidado.",
     "titleShort": "Proyectos y colaboraciones",
     "viewProject": "Ver proyecto"
   },
   "services": {
     "items": {
       "ai": {
-        "description": "Apps y herramientas con IA para resolver retos específicos de cada industria.",
-        "title": "IA y productos Amoxtli"
+        "description": "Construimos apps con propósito y herramientas potenciadas con IA adaptadas a los retos de cada industria.",
+        "title": "Expansión con IA y productos AMOXTLI"
       },
       "brand": {
-        "description": "Diseño de logo, sistema de marca, mockups y UI kits para comunicar confianza.",
+        "description": "Diseño de logo, sistemas de marca, mockups y kits de UI que mantienen tu producto coherente y creíble.",
         "title": "Branding y sistemas visuales"
       },
       "consulting": {
-        "description": "Acompañamos a equipos para digitalizar procesos y adoptar flujos de software.",
+        "description": "Acompañamiento para modernizar equipos, digitalizar operaciones y migrar a flujos de trabajo basados en software.",
         "title": "Consultoría de transformación digital"
       },
       "marketing": {
-        "description": "SEO, Google Analytics, Google Business y medición para crecer con datos.",
+        "description": "SEO, Google Analytics, Google Business y seguimiento que convierten visibilidad en crecimiento medible.",
         "title": "Marketing digital y analítica"
       },
       "software": {
-        "description": "Software a la medida, apps móviles y plataformas SaaS diseñadas para necesidades reales.",
+        "description": "Software a medida, apps móviles y plataformas SaaS construidas de principio a fin para necesidades reales de negocio.",
         "title": "Software, apps y SaaS"
       },
       "web": {
-        "description": "Sitios modernos, rápidos y confiables con UX clara, rendimiento y conversión.",
+        "description": "Sitios web modernos, rápidos y sólidos con UX clara, buen rendimiento y enfoque en conversión.",
         "title": "Diseño y desarrollo web"
       }
     },
-    "subtitle": "Desde software hasta branding y crecimiento, creamos las herramientas que impulsan tu negocio en cualquier industria.",
-    "title": "Aliados digitales de principio a fin."
+    "subtitle": "Del software a la identidad visual y el crecimiento digital, construimos las herramientas que mueven tu negocio hacia adelante.",
+    "title": "Tu partner tecnológico completo."
   },
   "testimonials": {
     "fratellis": {
       "designation": "Propietaria en Fratelli's Helados",
       "name": "Laura O.",
-      "quote": "La plataforma de comercio electrónico construida para nosotros ha llevado nuestras ventas al siguiente nivel. El diseño intuitivo y las mejoras de rendimiento superaron todas las expectativas."
+      "quote": "La plataforma de e-commerce que construyeron para nosotros llevó nuestras ventas a otro nivel. El diseño intuitivo y el rendimiento superaron todas nuestras expectativas."
     },
     "orza": {
       "designation": "CEO en Orza Tech",
       "name": "Andrés I.",
-      "quote": "Nuestro sitio web comercial ahora es más rápido, más receptivo y está bellamente diseñado. El equipo capturó perfectamente nuestra visión y entregó una experiencia de usuario impecable."
+      "quote": "Nuestro sitio web ahora es más rápido, más responsivo y con un diseño que nos representa. El equipo capturó exactamente nuestra visión y entregó una experiencia de usuario impecable."
     },
     "rondo": {
       "designation": "Director Creativo en Rondo Productions",
       "name": "Omar D.",
-      "quote": "El sitio de portafolio creado para nosotros es impresionante y funcional. Muestra perfectamente nuestro trabajo y nos ha ayudado a ganar más clientes. ¡Un trabajo realmente sobresaliente!"
+      "quote": "El sitio de portafolio que crearon es impresionante y funcional. Muestra nuestro trabajo exactamente como lo imaginábamos y nos ha ayudado a conseguir más clientes."
     },
-    "subtitle": "Historias reales de equipos que confiaron en nuestro trabajo.",
+    "subtitle": "Historias reales de equipos que confiaron en nosotros con su presencia digital.",
     "sucre": {
       "designation": "Directora en Colegio Antonio José de Sucre",
       "name": "Patricia A.",
-      "quote": "Nuestro sitio educativo ahora es un centro para el aprendizaje interactivo y de fácil acceso para los padres. La atención al detalle y la creatividad del equipo marcaron toda la diferencia."
+      "quote": "Nuestro sitio educativo ahora es un centro de aprendizaje interactivo y fácil de usar para padres y alumnos. La atención al detalle del equipo marcó la diferencia."
     },
     "title": "Lo que dicen nuestros clientes"
+  },
+  "whatsapp": {
+    "modalTitle": "Hablemos de tu proyecto",
+    "modalSubtitle": "Escanea el código con tu teléfono para abrir WhatsApp",
+    "openLink": "O abre WhatsApp desde aquí"
   }
 }

@@ -5,9 +5,12 @@ import FadeIn from "./FadeIn";
 import { Check } from "lucide-react";
 import { useState } from "react";
 import PricingInquiryModal from "./PricingInquiryModal";
+import { useWhatsAppCTA } from "./useWhatsAppCTA";
+import WhatsAppModal from "./WhatsAppModal";
 
 const PricingSection = () => {
   const { t } = useTranslation();
+  const { handleCTA, modalOpen, closeModal } = useWhatsAppCTA();
   const [selectedService, setSelectedService] = useState<string | null>(null);
 
   const plans = [
@@ -128,7 +131,7 @@ const PricingSection = () => {
                   type="button"
                   onClick={(event) => {
                     event.stopPropagation();
-                    setSelectedService(plan.title);
+                    handleCTA();
                   }}
                   className="mt-auto inline-flex min-h-[40px] items-center justify-center rounded-full border border-primary px-4 text-xs font-semibold text-primary transition-colors hover:bg-primary hover:text-paper max-sm:mt-4"
                 >
@@ -143,6 +146,7 @@ const PricingSection = () => {
           service={selectedService || undefined}
           onClose={() => setSelectedService(null)}
         />
+        <WhatsAppModal open={modalOpen} onClose={closeModal} />
       </div>
     </section>
   );

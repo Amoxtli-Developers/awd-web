@@ -6,6 +6,8 @@ import { useTranslation } from "react-i18next";
 import { ArrowUp } from "lucide-react";
 import LanguageToggle from "./LanguageToggle";
 import logoMark from "@assets/logo/main.svg";
+import { useWhatsAppCTA } from "./useWhatsAppCTA";
+import WhatsAppModal from "./WhatsAppModal";
 
 const SiteFooter = ({
   onLanguageChange,
@@ -13,6 +15,7 @@ const SiteFooter = ({
   onLanguageChange: (lang: "en" | "es") => void;
 }) => {
   const { t } = useTranslation();
+  const { handleCTA, modalOpen, closeModal } = useWhatsAppCTA();
   const footerRef = useRef<HTMLDivElement | null>(null);
   const [showTop, setShowTop] = useState(false);
 
@@ -45,14 +48,13 @@ const SiteFooter = ({
             </p>
             <p className="mt-6 text-sm text-ink/70">{t("contact.note")}</p>
             <div className="mt-8">
-              <a
-                href="https://calendar.app.google/XSn3nbJqGQ1imCnJ8"
-                target="_blank"
-                rel="noreferrer"
+              <button
+                type="button"
+                onClick={handleCTA}
                 className="inline-flex min-h-[44px] items-center rounded-full border border-primary px-6 py-3 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-paper"
               >
                 {t("contact.primaryCta")}
-              </a>
+              </button>
             </div>
           </div>
 
@@ -117,6 +119,7 @@ const SiteFooter = ({
           </div>
         </div>
       </div>
+      <WhatsAppModal open={modalOpen} onClose={closeModal} />
       {showTop && (
         <button
           type="button"
