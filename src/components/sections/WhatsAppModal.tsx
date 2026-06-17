@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
+import { motion, AnimatePresence } from "framer-motion";
 import { QRCodeSVG } from "qrcode.react";
 import { X } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -30,49 +31,73 @@ const WhatsAppModal = ({ open, onClose }: Props) => {
     return () => document.removeEventListener("keydown", handleKey);
   }, [open, onClose]);
 
-  if (!open || !mounted) return null;
+  if (!mounted) return null;
 
   return createPortal(
-    <div
-      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60"
-      onClick={onClose}
-    >
-      <div
-        className="relative flex w-[90%] max-w-sm flex-col items-center gap-6 rounded-2xl bg-ink p-8 text-paper"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <button
-          type="button"
+    <AnimatePresence>
+      {open && (
+        <motion.div
+          key="overlay"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.2, ease: "easeOut" }}
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-ink/40 px-4 backdrop-blur-sm"
           onClick={onClose}
-          className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full border border-paper/30 text-paper/70 transition-colors hover:text-paper"
-          aria-label="Cerrar"
         >
-          <X className="h-4 w-4" />
-        </button>
+          <motion.div
+            key="card"
+            initial={{ opacity: 0, y: 24, scale: 0.97 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 16, scale: 0.97 }}
+            transition={{ duration: 0.28, ease: [0.32, 0.72, 0, 1] }}
+            className="relative flex w-full max-w-sm flex-col items-center gap-6 rounded-2xl border border-line bg-paper p-8 shadow-[0_20px_60px_rgba(0,0,0,0.10)]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close */}
+            <button
+              type="button"
+              onClick={onClose}
+              className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full border border-line text-muted transition-colors hover:border-ink/20 hover:text-ink"
+              aria-label="Cerrar"
+            >
+              <X className="h-4 w-4" />
+            </button>
 
-        <div className="text-center">
-          <h2 className="font-space-grotesk text-xl font-semibold">
-            {t("whatsapp.modalTitle")}
-          </h2>
-          <p className="mt-2 text-sm text-paper/70">
-            {t("whatsapp.modalSubtitle")}
-          </p>
-        </div>
+            {/* Header */}
+            <div className="text-center">
+              <h2 className="text-xl font-semibold text-ink">
+                {t("whatsapp.modalTitle")}
+              </h2>
+              <p className="mt-1.5 text-sm leading-relaxed text-muted">
+                {t("whatsapp.modalSubtitle")}
+              </p>
+            </div>
 
-        <div className="rounded-xl bg-paper p-4">
-          <QRCodeSVG value={waUrl} size={200} bgColor="#ffffff" fgColor="#1a1a1a" />
-        </div>
+            {/* QR */}
+            <div className="rounded-xl border border-line p-4">
+              <QRCodeSVG
+                value={waUrl}
+                size={192}
+                bgColor="#FBFBFB"
+                fgColor="#FA1F6F"
+                level="M"
+              />
+            </div>
 
-        <a
-          href={waUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="text-sm text-paper/70 transition-colors hover:text-paper"
-        >
-          {t("whatsapp.openLink")} →
-        </a>
-      </div>
-    </div>,
+            {/* Fallback link */}
+            <a
+              href={waUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="text-sm font-medium text-primary transition-opacity hover:opacity-70"
+            >
+              {t("whatsapp.openLink")} →
+            </a>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>,
     document.body
   );
 };
