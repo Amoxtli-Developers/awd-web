@@ -95,8 +95,8 @@ export async function generateMetadata(): Promise<Metadata> {
       images: [
         {
           url: "/assets/og-image.jpg",
-          width: 1200,
-          height: 630,
+          width: 5184,
+          height: 3456,
           alt: meta.ogAlt,
         },
       ],
@@ -108,7 +108,8 @@ export async function generateMetadata(): Promise<Metadata> {
       title: meta.twitterTitle,
       description: meta.twitterDescription,
       images: ["/assets/og-image.jpg"],
-      site: "@amoxtli",
+      site: "@amoxtlitech",
+      creator: "@amoxtlitech",
     },
     robots: {
       index: true,
@@ -296,6 +297,9 @@ export default async function RootLayout({
   return (
     <html lang={lang === "es" ? "es" : "en"}>
       <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
